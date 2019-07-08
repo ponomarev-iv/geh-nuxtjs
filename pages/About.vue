@@ -1,10 +1,9 @@
 <template lang="pug">
-
+  h1 Страница About
 </template>
 
 <script>
   export default {
-    name: "Home",
-    layout: 'main'
+    name: 'About'
   }
 </script>
