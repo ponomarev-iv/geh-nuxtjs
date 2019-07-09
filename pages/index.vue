@@ -19,7 +19,7 @@
 
 <script>
 
-import MainInfo from '../components/wrap/MainInfo';
+import MainInfo from '../components/wraps/MainInfo';
 export default {
   components: { MainInfo },
   head () {
