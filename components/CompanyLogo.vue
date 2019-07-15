@@ -1,5 +1,5 @@
 <template lang="pug">
-  a.header__logo(href="/")
+  router-link.header__logo(to="/")
     slot
 
 </template>

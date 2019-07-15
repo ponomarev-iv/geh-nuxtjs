@@ -1,64 +1,64 @@
 <template lang="pug">
   nav.main-nav
-    a.main-nav__link(href="/") Главная
+    router-link.main-nav__link(to="/") Главная
     .main-nav__link-wrap
-      a.main-nav__link.main-nav__link_drop(href="/about.html") Компания
+      router-link.main-nav__link.main-nav__link_drop(to="/company/about") Компания
       .sub-menu
-        a.sub-menu__link(href="/about.html") О компании
-        a.sub-menu__link(href="/history.html" ) История
-        a.sub-menu__link(href="/structura.html" ) Структура компании
-        a.sub-menu__link(href="/filialy.html" ) Филиалы
-        a.sub-menu__link(href="/coming-soon.html" ) Бизнес модель
-        a.sub-menu__link(href="/coming-soon.html" ) Миссия и стратегия
-        a.sub-menu__link(href="/coming-soon.html" ) Кадровая политика
-        a.sub-menu__link(href="/coming-soon.html" ) Политика в области качества
-        a.sub-menu__link(href="/coming-soon.html" ) Импортозамещение
-        a.sub-menu__link(href="/coming-soon.html" ) Антикоррупционная деятельность
-
-    .main-nav__link-wrap
-      a.main-nav__link.main-nav__link_drop(href="/catalog.html") Отраслевые направления
-      .sub-menu
-        a.sub-menu__link(href="/ehlektricheskaya-set.html" ) Электрическая сеть
-        a.sub-menu__link(href="/gidroehnergetika.html" ) Гидроэнергетика
-        a.sub-menu__link(href="/teplovaya-energetika.html" ) Тепловая энергетика
-        a.sub-menu__link(href="/nuclear-energy.html" ) Ядерная энергетика
-        a.sub-menu__link(href="/alternativnaya-energetika.html" ) Альтернативная энергетика
+        router-link.sub-menu__link(to="/company/about") О компании
+        router-link.sub-menu__link(to="/company/history" ) История
+        router-link.sub-menu__link(to="/company/structura" ) Структура компании
+        router-link.sub-menu__link(to="/company/filialy" ) Филиалы
+        router-link.sub-menu__link(to="in-dev" ) Бизнес модель
+        router-link.sub-menu__link(to="in-dev" ) Миссия и стратегия
+        router-link.sub-menu__link(to="in-dev" ) Кадровая политика
+        router-link.sub-menu__link(to="in-dev" ) Политика в области качества
+        router-link.sub-menu__link(to="in-dev" ) Импортозамещение
+        router-link.sub-menu__link(to="in-dev" ) Антикоррупционная деятельность
 
     .main-nav__link-wrap
-      a.main-nav__link.main-nav__link_drop(href="/coming-soon.html") Производство
+      router-link.main-nav__link.main-nav__link_drop(to="/catalog.html") Отраслевые направления
       .sub-menu
-        a.sub-menu__link(href="/coming-soon.html") О производстве
-        a.sub-menu__link(href="/coming-soon.html") Преимущества
-        a.sub-menu__link(href="/coming-soon.html") Продукция
-        a.sub-menu__link(href="/coming-soon.html") Услуги
-        a.sub-menu__link(href="/coming-soon.html") Сертификаты
-        a.sub-menu__link(href="/coming-soon.html") Закупки
+        router-link.sub-menu__link(to="/ehlektricheskaya-set.html" ) Электрическая сеть
+        router-link.sub-menu__link(to="/gidroehnergetikrouter-link.html" ) Гидроэнергетика
+        router-link.sub-menu__link(to="/teplovaya-energetikrouter-link.html" ) Тепловая энергетика
+        router-link.sub-menu__link(to="/nuclear-energy.html" ) Ядерная энергетика
+        router-link.sub-menu__link(to="/alternativnaya-energetikrouter-link.html" ) Альтернативная энергетика
 
     .main-nav__link-wrap
-      a.main-nav__link.main-nav__link_drop(href="/coming-soon.html") Библиотека
+      router-link.main-nav__link.main-nav__link_drop(to="in-dev") Производство
       .sub-menu
-        a.sub-menu__link(href="/coming-soon.html") Российская электроэнергетика
-        a.sub-menu__link(href="/coming-soon.html") ГОСТы
-        a.sub-menu__link(href="/coming-soon.html") Типовые проекты
-        a.sub-menu__link(href="/coming-soon.html") Справочная литература
-        a.sub-menu__link(href="/coming-soon.html") Нормативно-правовоые акты<br> в&nbsp;сфере электроэнергетики
+        router-link.sub-menu__link(to="in-dev") О производстве
+        router-link.sub-menu__link(to="in-dev") Преимущества
+        router-link.sub-menu__link(to="in-dev") Продукция
+        router-link.sub-menu__link(to="in-dev") Услуги
+        router-link.sub-menu__link(to="in-dev") Сертификаты
+        router-link.sub-menu__link(to="in-dev") Закупки
 
     .main-nav__link-wrap
-      a.main-nav__link.main-nav__link_drop(href="/coming-soon.html") Пресс-центр
+      router-link.main-nav__link.main-nav__link_drop(to="in-dev") Библиотека
       .sub-menu
-        a.sub-menu__link(href="/coming-soon.html") Новости энергетики
-        a.sub-menu__link(href="/coming-soon.html") Электрическая сеть
-        a.sub-menu__link(href="/coming-soon.html") Гидроэнергетика
-        a.sub-menu__link(href="/coming-soon.html") Тепловая энергетика
-        a.sub-menu__link(href="/coming-soon.html") Ядерная энергетика
-        a.sub-menu__link(href="/coming-soon.html") Альтернативная энергетика
-        a.sub-menu__link(href="/coming-soon.html") Новости компании
+        router-link.sub-menu__link(to="in-dev") Российская электроэнергетика
+        router-link.sub-menu__link(to="in-dev") ГОСТы
+        router-link.sub-menu__link(to="in-dev") Типовые проекты
+        router-link.sub-menu__link(to="in-dev") Справочная литература
+        router-link.sub-menu__link(to="in-dev") Нормативно-правовоые акты<br> в&nbsp;сфере электроэнергетики
 
-    a.main-nav__link(href="/cabinet.html#login") Кабинет
+    .main-nav__link-wrap
+      router-link.main-nav__link.main-nav__link_drop(to="in-dev") Пресс-центр
+      .sub-menu
+        router-link.sub-menu__link(to="in-dev") Новости энергетики
+        router-link.sub-menu__link(to="in-dev") Электрическая сеть
+        router-link.sub-menu__link(to="in-dev") Гидроэнергетика
+        router-link.sub-menu__link(to="in-dev") Тепловая энергетика
+        router-link.sub-menu__link(to="in-dev") Ядерная энергетика
+        router-link.sub-menu__link(to="in-dev") Альтернативная энергетика
+        router-link.sub-menu__link(to="in-dev") Новости компании
 
-    a.main-nav__link(href="/coming-soon.html") Акции
+    router-link.main-nav__link(to="/cabinet.html#login") Кабинет
 
-    a.main-nav__link(href="/contacts.html") Контакты
+    router-link.main-nav__link(to="in-dev") Акции
+
+    router-link.main-nav__link(to="/contacts.html") Контакты
 </template>
 
 <script>

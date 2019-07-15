@@ -29,9 +29,25 @@
     mounted () {
       this.animatePage()
     },
+    created () {
+      if (process.browser) {
+        window.addEventListener('scroll', this.handleScroll);
+      }
+    },
+    destroyed () {
+      if (process.browser) {
+        window.removeEventListener('scroll', this.handleScroll);
+      }
+    },
     methods: {
       animatePage () {
         this.$refs.top.classList.add('is-show');
+      },
+      handleScroll () {
+        // TODO: временное решение, пока нет окончательного дизайна
+        if (window.scrollY > 200) {
+          this.$refs.top.classList.add('is-dark');
+        } else this.$refs.top.classList.remove('is-dark')
       }
     }
   }
