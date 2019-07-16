@@ -13,7 +13,9 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "nuxt": "^2.2.0"
+    "nuxt": "^2.2.0",
+    "vuex": "latest",
+    "vue": "latest"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.6.0",

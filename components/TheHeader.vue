@@ -9,7 +9,7 @@
       .header__right-col
         a.search(href="search.html")
           svg.icon-search(xmlns='http://www.w3.org/2000/svg', width='100%', height='100%')
-            use(xlink:href='img/svg-lib.svg#ico-search')
+            use(xlink:href='/img/svg-lib.svg#ico-search')
         a.header__btn(href="/cabinet.html#login") Склад
         .land-switch
           a.land-switch__item.is-active(href="/coming-soon.html") Рус

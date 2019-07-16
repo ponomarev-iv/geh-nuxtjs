@@ -48,6 +48,11 @@
   export default {
     name: 'History',
     components: { Breadcrumbs, CompanyMenu },
+    head () {
+      return {
+        title: 'ГлобалЭнергоХолдинг | История'
+      }
+    },
     data () {
       return {
         title: 'История'
