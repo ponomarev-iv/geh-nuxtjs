@@ -10,8 +10,8 @@
               :folder="[{id: 0, title: 'Компания', link: '/company/about'}]"
               :current="title"
             )
-            h2.section-title {{ title }}
-            h3.section-title.section-title_subtitle Приволжский филиал
+            h1.section-title {{ title }}
+            h2.section-title.section-title_subtitle Приволжский филиал
             section.content-block
               InfoBlock
             section.content-block.content-block_brd-bot

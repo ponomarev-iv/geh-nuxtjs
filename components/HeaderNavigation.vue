@@ -16,13 +16,13 @@
         router-link.sub-menu__link(to="in-dev" ) Антикоррупционная деятельность
 
     .main-nav__link-wrap
-      router-link.main-nav__link.main-nav__link_drop(to="/catalog.html") Отраслевые направления
+      router-link.main-nav__link.main-nav__link_drop(to="/catalog") Отраслевые направления
       .sub-menu
-        router-link.sub-menu__link(to="/ehlektricheskaya-set.html" ) Электрическая сеть
-        router-link.sub-menu__link(to="/gidroehnergetikrouter-link.html" ) Гидроэнергетика
-        router-link.sub-menu__link(to="/teplovaya-energetikrouter-link.html" ) Тепловая энергетика
-        router-link.sub-menu__link(to="/nuclear-energy.html" ) Ядерная энергетика
-        router-link.sub-menu__link(to="/alternativnaya-energetikrouter-link.html" ) Альтернативная энергетика
+        router-link.sub-menu__link(to="/catalog/elektricheskaya-set" ) Электрическая сеть
+        router-link.sub-menu__link(to="/catalog/gidroenergetika" ) Гидроэнергетика
+        router-link.sub-menu__link(to="/catalog/teplovaya-energetika" ) Тепловая энергетика
+        router-link.sub-menu__link(to="/catalog/nuclear-energy" ) Ядерная энергетика
+        router-link.sub-menu__link(to="/catalog/alternativnaya-energetika" ) Альтернативная энергетика
 
     .main-nav__link-wrap
       router-link.main-nav__link.main-nav__link_drop(to="in-dev") Производство
