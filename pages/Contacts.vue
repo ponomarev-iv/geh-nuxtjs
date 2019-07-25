@@ -49,16 +49,18 @@
                 p.ico-box__txt Если Вас не&nbsp;устраивает качество сервиса, Вы&nbsp;можете<br> обратиться по&nbsp;телефону горячей линии <a class="ico-box__txt_accent" href="tel:88005502259">8&nbsp;800&nbsp;550 22 59</a><br>
                   | Мы&nbsp;благодарны за&nbsp;Ваши обращения!
           FeedbackForm
+      MapLeaflet
 </template>
 
 <script>
   import Breadcrumbs from '../components/UI/Breadcrumbs';
   import { VueTabs, VTab } from 'vue-nav-tabs'
   import FeedbackForm from '../components/blocks/FeedbackForm';
+  import MapLeaflet from '../components/blocks/Contacts/MapLeaflet';
 
   export default {
     name: 'Contacts',
-    components: { FeedbackForm, Breadcrumbs, VueTabs, VTab },
+    components: { MapLeaflet, FeedbackForm, Breadcrumbs, VueTabs, VTab },
     head () {
       return {
         title: 'ГлобалЭнергоХолдинг | Контакты'

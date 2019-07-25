@@ -16,6 +16,9 @@ module.exports = {
   css: [
     '~static/css/all.css'
   ],
+  plugins: [
+    { src: '~plugins/leaflet.js', ssr: false }
+  ],
   /*
   ** Customize the progress bar color
   */
