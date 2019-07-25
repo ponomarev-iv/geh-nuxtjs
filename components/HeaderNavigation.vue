@@ -58,7 +58,7 @@
 
     router-link.main-nav__link(to="in-dev") Акции
 
-    router-link.main-nav__link(to="/contacts.html") Контакты
+    router-link.main-nav__link(to="/contacts") Контакты
 </template>
 
 <script>

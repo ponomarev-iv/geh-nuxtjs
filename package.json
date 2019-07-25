@@ -13,9 +13,11 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "babel-helper-vue-jsx-merge-props": "^2.0.3",
     "nuxt": "^2.2.0",
-    "vuex": "latest",
-    "vue": "latest"
+    "vue": "latest",
+    "vue-nav-tabs": "^0.5.7",
+    "vuex": "latest"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.6.0",
