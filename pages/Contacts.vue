@@ -9,11 +9,12 @@
             Breadcrumbs(:current="title")
             h1.section-title {{ title }}
             vue-tabs(
+              @tab-change="changeMap"
               type="pills"
               active-tab-color="#0059b5"
               active-text-color="#ffffff"
             )
-              v-tab(title="Головной офис" )
+              v-tab(title="Головной офис")
                 h2.section-title.section-title_subtitle Головной офис
                 .content-block
                   p.adres
@@ -49,6 +50,18 @@
                 p.ico-box__txt Если Вас не&nbsp;устраивает качество сервиса, Вы&nbsp;можете<br> обратиться по&nbsp;телефону горячей линии <a class="ico-box__txt_accent" href="tel:88005502259">8&nbsp;800&nbsp;550 22 59</a><br>
                   | Мы&nbsp;благодарны за&nbsp;Ваши обращения!
           FeedbackForm
+      .map.is-view
+        GmapMap(
+          :center="center"
+          :zoom="16"
+          map-type-id="terrain"
+          style="width: 100%; height: 100%"
+        )
+          GmapMarker(
+            :position="center"
+            :clickable="true"
+            :animation="1"
+          )
 </template>
 
 <script>
@@ -66,7 +79,17 @@
     },
     data () {
       return {
-        title: 'Контакты'
+        title: 'Контакты',
+        center: { lat: 59.914200, lng: 30.386672 }
+      }
+    },
+    methods: {
+      changeMap (tabIndex, newTab, oldTab) {
+        if (newTab !== oldTab) {
+          if (tabIndex === 1) {
+            this.center = { lat: 58.007991, lng: 56.233558 }
+          } else this.center = { lat: 59.914200, lng: 30.386672 }
+        }
       }
     }
   }

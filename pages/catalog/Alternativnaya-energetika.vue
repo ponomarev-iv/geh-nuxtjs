@@ -103,7 +103,6 @@
               router-link.catalog-item.catalog-item_l-blue(to="#")
                 h2.catalog-item__name Ветровые и&nbsp;солнечные светильники улчиного и&nbsp;внутреннего освещения
                 span.catalog-item__btn Подробнее
-
 </template>
 
 <script>

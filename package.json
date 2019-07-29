@@ -17,6 +17,7 @@
     "nuxt": "^2.2.0",
     "vue": "latest",
     "vue-nav-tabs": "^0.5.7",
+    "vue2-google-maps": "^0.10.7",
     "vuex": "latest"
   },
   "devDependencies": {
