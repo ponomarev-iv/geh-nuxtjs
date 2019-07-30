@@ -1,5 +1,5 @@
 <template lang="pug">
-  a(:href="info.src").hero__tile
+  router-link(:to="info.src").hero__tile
     h3(v-html="info.text")
     .hero__tile-btn Подробнее
 </template>

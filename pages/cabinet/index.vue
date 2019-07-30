@@ -23,6 +23,10 @@
 
 <script>
   export default {
-    name: 'index'
+    head () {
+      return {
+        title: 'ГлобалЭнергоХолдинг | Кабинет'
+      }
+    }
   }
 </script>
