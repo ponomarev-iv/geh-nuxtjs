@@ -18,19 +18,19 @@
         nav.footer__nav
           .footer__nav-col
             router-link.footer__nav-link(to="/") Главная
-            router-link.footer__nav-link(to="about") Компания
-            router-link.footer__nav-link(to="/catalog.html") Каталог
+            router-link.footer__nav-link(to="/company/about") Компания
+            router-link.footer__nav-link(to="/catalog") Отраслевые направления
             router-link.footer__nav-link(to="in-dev") Библиотека
           .footer__nav-col
             router-link.footer__nav-link(to="in-dev") Пресс-центр
             router-link.footer__nav-link(to="in-dev") Акции
             router-link.footer__nav-link(to="in-dev") Помощь
-            router-link.footer__nav-link(to="/contacts.html") Контакты
+            router-link.footer__nav-link(to="/contacts") Контакты
           .footer__nav-col
-            router-link.footer__nav-link(to="/cabinet.html#login") Кабинет
+            router-link.footer__nav-link(to="/cabinet") Кабинет
             router-link.footer__nav-link(to="in-dev") Презентация
-            router-link.footer__nav-link(to="/cabinet.html#order") Оставить заявку
-            router-link.footer__nav-link(to="/cabinet.html#order-call") Заказать звонок
+            router-link.footer__nav-link(to="in-dev") Оставить заявку
+            router-link.footer__nav-link(to="in-dev") Заказать звонок
 
         .footer__social-block.soc-link
           .soc-link__item.soc-link__item_vk

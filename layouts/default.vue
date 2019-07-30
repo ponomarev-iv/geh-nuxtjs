@@ -19,7 +19,7 @@
     components: { TheFooter, TheMainFooter, TheHeader },
     computed: {
       isMainPage () {
-        return (this.$route.name === 'index')
+        return (this.$route.name === 'index' || this.$route.path === '/cabinet')
       }
     }
   }

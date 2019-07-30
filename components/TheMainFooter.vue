@@ -2,9 +2,9 @@
   footer.main-footer.main-footer_fixed(ref="foot")
     .c-wrap
       .main-footer__nav
-        a.main-footer__link(href="/cabinet.html#order") Оставить заявку
-        a.main-footer__link(href="/cabinet.html#order-call") Заказать звонок
-        a.main-footer__link(href="/coming-soon.html") Презентация
+        router-link.main-footer__link(to="in-dev") Оставить заявку
+        router-link.main-footer__link(to="in-dev") Заказать звонок
+        router-link.main-footer__link(to="in-dev") Презентация
       .main-footer__rigth-col.soc-link
         a.soc-link__item.soc-link__item_vk(href="#" target="_blank")
         a.soc-link__item.soc-link__item_fb(href="#" target="_blank")

@@ -28,7 +28,7 @@
             router-link.site-map__link.site-map__link_drop(to="/catalog/teplovaya-energetika") Тепловая энергетика
             router-link.site-map__link.site-map__link_drop(to="/catalog/nuclear-energy") Ядерная энергетика
             router-link.site-map__link.site-map__link_drop(to="/catalog/alternativnaya-energetika") Альтернативная энергетика
-            router-link.site-map__title(to="cabinet.html#login") Кабинет
+            router-link.site-map__title(to="/cabinet") Кабинет
           .site-map__col
             router-link.site-map__title(to="in-dev") Библиотека
             router-link.site-map__link(to="in-dev") Российская электроэнергетика

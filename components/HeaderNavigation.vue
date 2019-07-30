@@ -54,7 +54,7 @@
         router-link.sub-menu__link(to="in-dev") Альтернативная энергетика
         router-link.sub-menu__link(to="in-dev") Новости компании
 
-    router-link.main-nav__link(to="/cabinet.html#login") Кабинет
+    router-link.main-nav__link(to="/cabinet") Кабинет
 
     router-link.main-nav__link(to="in-dev") Акции
 
