@@ -2,7 +2,9 @@
   nav.main-nav
     router-link.main-nav__link(to="/") Главная
     .main-nav__link-wrap
-      router-link.main-nav__link.main-nav__link_drop(to="/company/about") Компания
+      router-link.main-nav__link.main-nav__link_drop(
+        to="/company/about"
+        :class="{'is-active': activeClass === 'company'}") Компания
       .sub-menu
         router-link.sub-menu__link(to="/company/about") О компании
         router-link.sub-menu__link(to="/company/history" ) История
@@ -10,13 +12,13 @@
         router-link.sub-menu__link(to="/company/filialy" ) Филиалы
         router-link.sub-menu__link(to="/in-dev" ) Бизнес модель
         router-link.sub-menu__link(to="/in-dev" ) Миссия и стратегия
-        router-link.sub-menu__link(to="/in-dev" ) Кадровая политика
+        router-link.sub-menu__link(to="/company/kadrovaya-politika" ) Кадровая политика
         router-link.sub-menu__link(to="/in-dev" ) Политика в области качества
         router-link.sub-menu__link(to="/in-dev" ) Импортозамещение
         router-link.sub-menu__link(to="/in-dev" ) Антикоррупционная деятельность
 
     .main-nav__link-wrap
-      router-link.main-nav__link.main-nav__link_drop(to="/catalog") Отраслевые направления
+      router-link.main-nav__link.main-nav__link_drop(to="/catalog") {{ catalogName }}
       .sub-menu
         router-link.sub-menu__link(to="/catalog/elektricheskaya-set" ) Электрическая сеть
         router-link.sub-menu__link(to="/catalog/gidroenergetika" ) Гидроэнергетика
@@ -24,7 +26,7 @@
         router-link.sub-menu__link(to="/catalog/nuclear-energy" ) Ядерная энергетика
         router-link.sub-menu__link(to="/catalog/alternativnaya-energetika" ) Альтернативная энергетика
 
-    .main-nav__link-wrap
+    .main-nav__link-wrap(v-if="!isSmall")
       router-link.main-nav__link.main-nav__link_drop(to="/in-dev#pr-vo") Производство
       .sub-menu
         router-link.sub-menu__link(to="/in-dev") О производстве
@@ -63,6 +65,15 @@
 
 <script>
   export default {
-    name: 'HeaderNavigation'
+    name: 'HeaderNavigation',
+    props: {
+      isSmall: Boolean,
+      activeClass: String
+    },
+    computed: {
+      catalogName () {
+        return (this.isSmall) ? 'Каталог' : 'Отраслевые направления'
+      }
+    }
   }
 </script>

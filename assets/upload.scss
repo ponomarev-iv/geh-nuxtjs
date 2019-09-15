@@ -1,0 +1,46 @@
+//upload
+.upload{
+  border: 1px dashed #E5E5E5;
+  height: 64px;
+  text-align: center;
+  padding: 20px 1rem;
+  line-height: 1.5;
+
+  &__txt{
+    font-size: .875rem;
+    color: #000;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  &__file{
+    display: flex;
+
+    & img {
+      margin-right: 1rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      cursor: pointer;
+    }
+  }
+
+  &__lbl{
+    color: #602C75;
+    font-size: .875rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+
+    & img{
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-right: 1rem;
+    }
+  }
+
+  &__inp{
+    display: none;
+  }
+}

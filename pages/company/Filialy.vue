@@ -52,7 +52,8 @@
             section.content-block
               h3.content-title Территория обслуживания
               FilialyItem
-          CompanyMenu
+          aside.main-block__menu
+            CompanyMenu
         FilialMap
 </template>
 

@@ -1,0 +1,35 @@
+.input{
+  display: flex;
+  flex-direction: column;
+
+  &__label{
+    font-size: .875rem;
+    color: #4D4D4D;
+    margin-bottom: 1rem;
+  }
+
+  &__item{
+    border-radius: .25rem;
+    font-size: .875rem;
+    color: #000000;
+    padding: 1em 1.15em;
+    background-color: transparent;
+    border: 1px solid #CDCDCD;
+    height: 3rem;
+    outline: none;
+    transition: all ease .33s;
+    font-family: 'Open Sans', sans-serif;
+
+    &::placeholder{
+      color: #B3B3B3;
+    }
+
+    &:focus{
+      border-color: #602C75;
+      box-shadow: 0 4px 10px rgba(#000, .1);
+    }
+  }
+}
+input::-ms-clear {
+  display: none;
+}

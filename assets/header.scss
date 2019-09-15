@@ -1,0 +1,74 @@
+.header{
+  &_white{
+    background-image: none;
+    padding: 0;
+    border-bottom: 1px solid #E5E5E5;
+    box-shadow: 0 5px 20px rgba(#000, .08);
+
+    & .header__first-line {
+      padding: 1rem 2.5rem;
+      border-bottom: 1px solid #E5E5E5;
+    }
+
+    & .header__phone-num{
+      color: #000000;
+    }
+
+    & .header__phone-txt{
+      color: #B3B3B3;
+      font-size: .75rem;
+      line-height: 2;
+    }
+
+    & .header__btn{
+      background-color: #2B5BAE;
+      color: #fff;
+    }
+
+    & .land-switch__item{
+      color: #B3B3B3;
+
+      &.is-active{
+        color: #000000;
+
+        &:after{
+          height: 2px;
+          background-color: #000;
+          bottom: -4px;
+        }
+      }
+    }
+
+    & .header__m-btn{
+      width: 24px;
+      height: 24px;
+      background: none;
+    }
+
+    & .header__right-col{
+      width: 21.875rem;
+    }
+
+    & .main-nav__link{
+      color: #000000;
+
+      &:before{
+        background-color: #000;
+      }
+
+      &.is-active:before{
+        opacity: 1;
+      }
+    }
+
+    & .main-nav__link_drop{
+      &:after{
+        width: 12px;
+        height: 12px;
+        top: calc(50% - 6px);
+        right: -1.25rem;
+        background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDEyIDEyIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjc1NSAzMDEpIj48cmVjdCB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI3NTUgLTMwMSkiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMCwwLDUsNGw1LTQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI3NTYgLTI5NykiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2IzYjNiMyIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9nPjwvc3ZnPg==') no-repeat 50% 50%;
+      }
+    }
+  }
+}

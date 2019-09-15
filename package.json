@@ -15,9 +15,12 @@
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
+    "node-sass": "^4.12.0",
     "nuxt": "^2.8.1",
     "nuxt-polyfill": "^1.0.3",
+    "sass-loader": "^8.0.0",
     "vue": "latest",
+    "vue-masked-input": "^0.5.2",
     "vue-nav-tabs": "^0.5.7",
     "vuex": "latest"
   },
