@@ -11,10 +11,14 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic' }
-    ]
+    ],
+    htmlAttrs: {
+      lang: 'ru'
+    }
   },
   css: [
-    '~static/css/all.css'
+    '~static/css/all.css',
+    '@/assets/main.scss'
   ],
   /*
   ** Customize the progress bar color

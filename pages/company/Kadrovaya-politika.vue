@@ -157,9 +157,3 @@
     }
   }
 </script>
-
-<style lang="scss">
-  @import "../../assets/header";
-  @import "../../assets/sec-menu";
-  @import "../../assets/kadrovaya-politika";
-</style>

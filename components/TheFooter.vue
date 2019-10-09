@@ -2,7 +2,7 @@
   footer.footer
     .c-wrap.flex-row
       .footer__col
-        img.footer__logo(src="/img/footer-logo.png")
+        img.footer__logo(src="/img/footer-logo.png" alt="logo")
         .footer__par
           p.footer__lbl Бесплатный звонок по России
           a(href="tel:88005502259").footer__phone 8 800 550 22 59

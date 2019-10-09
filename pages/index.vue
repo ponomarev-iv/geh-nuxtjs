@@ -18,7 +18,6 @@
 </template>
 
 <script>
-
 import MainInfo from '../components/wraps/MainInfo';
 export default {
   components: { MainInfo },

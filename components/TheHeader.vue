@@ -15,10 +15,13 @@
           template(v-else)
             svg.icon-search(xmlns='http://www.w3.org/2000/svg', width='100%', height='100%')
               use(xlink:href='/img/svg-lib.svg#ico-search')
-        a.header__btn(href="/cabinet.html#login") Склад
+        router-link.header__btn(to="/cabinet") Склад
         .land-switch
-          a.land-switch__item.is-active(href="/coming-soon.html") Рус
-          a.land-switch__item(href="/coming-soon.html") Eng
+          .land-switch__item(
+            v-for="(item, idx) in lang"
+            :key="item.id"
+            :class="{'is-active': activeLang === idx}"
+            @click="handlerLang(idx)") {{ item.name }}
         router-link(to="/search").header__m-btn
           img(src="/img/ico-gamburger.svg" v-if="white")
     .header__menu
@@ -43,9 +46,20 @@
       activeClass: String,
       showCompanyMenu: Boolean
     },
+    data () {
+      return {
+        lang: [
+          { id: 0, name: 'Рус', link: '/' },
+          { id: 1, name: 'Eng', link: '/in-dev' }
+        ]
+      }
+    },
     computed: {
       srcLogo () {
         return (!this.white) ? '/img/logo.png' : '/img/logo-white.svg'
+      },
+      activeLang () {
+        return this.$store.state.lang
       }
     },
     mounted () {
@@ -62,6 +76,12 @@
       }
     },
     methods: {
+      handlerLang (idx) {
+        if (idx !== this.activeLang) {
+          this.$store.commit('SET_LANG', idx);
+          this.$router.push(this.lang[idx].link)
+        }
+      },
       animatePage () {
         this.$refs.top.classList.add('is-show');
       },
@@ -69,7 +89,9 @@
         // TODO: временное решение, пока нет окончательного дизайна
         if (window.scrollY > 200) {
           this.$refs.top.classList.add('is-dark');
-        } else this.$refs.top.classList.remove('is-dark')
+        } else {
+          this.$refs.top.classList.remove('is-dark')
+        }
       }
     }
   }

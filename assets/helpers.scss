@@ -1,0 +1,10 @@
+//lang switch
+.land-switch {
+  &__item {
+    cursor: pointer;
+
+    &.is-active {
+      cursor: default;
+    }
+  }
+}
