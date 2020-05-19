@@ -4,7 +4,7 @@
     .second-menu
       .c-wrap
         CompanyMenu(:inHeader="true" :inSubMenu="true")
-    .main-block
+    .main-block.main-block_alone
       .c-wrap
         Breadcrumbs(
           :folder="breadCrumbsFolder"
@@ -41,7 +41,7 @@
         linkArr: [
           {
             text: '&laquo;Антикоррупционная политика АО&nbsp;ГЭХ&raquo;',
-            notes: 'pdf, 12 Мб',
+            notes: 'docx, 33.96 КБ',
             url: 'antikorrupcionnaya-politika-ao-gehkh.docx'
           }
         ]

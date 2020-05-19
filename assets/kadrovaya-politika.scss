@@ -122,9 +122,9 @@ body {
     margin-bottom: 1em;
   }
 
-  //&_step{
-  //  padding-bottom: 3rem;
-  //}
+  &_no-mrg{
+    margin: 0;
+  }
 
   & .ico-block{
     padding-top: 1.5rem;

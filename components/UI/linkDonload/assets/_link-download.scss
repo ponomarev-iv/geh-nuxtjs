@@ -9,6 +9,10 @@
   color: #000;
   transition: all ease .33s;
 
+  &:not(:last-of-type){
+    margin-bottom: 1rem;
+  }
+
   &:hover{
     border-color: #fff;
     box-shadow: 0 10px 30px rgba(#000, .1);

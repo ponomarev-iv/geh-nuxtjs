@@ -7,6 +7,11 @@
 
 .main-block{
   flex-grow: 1;
+
+  &_alone{
+    padding-bottom: 5rem;
+    border-bottom: none;
+  }
 }
 
 //lang switch

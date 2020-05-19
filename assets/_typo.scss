@@ -1,0 +1,130 @@
+// paragraph
+.par{
+  color: #363636;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 2.5rem;
+}
+
+// lists
+.link-list{
+
+  &__item{
+    position: relative;
+    color: #2B5BAE;
+    padding-left: 2rem;
+
+    &:not(last-of-type){
+      margin-bottom: 2.5rem;
+    }
+
+    &:hover{
+      & .link-list__link{
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__link{
+    text-decoration: none;
+    color: currentColor;
+    line-height: 1.5;
+
+    &:before{
+      content: '';
+      position: absolute;
+      width: 1rem;
+      height: 1rem;
+      left: 0;
+      top: .25rem;
+      background: url('~static/img/ico-link.svg') no-repeat 50% 50% / contain;
+    }
+  }
+}
+
+.list{
+  margin-bottom: 4rem;
+
+  &__item{
+    position: relative;
+    color: #363636;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    padding-left: 1rem;
+
+    &:not(:last-of-type){
+      margin-bottom: 1.5rem;
+    }
+
+    &:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: .5rem;
+      width: .5rem;
+      height: .5rem;
+      border-radius: 50%;
+      background-color: #602C75;
+    }
+  }
+
+  &__link{
+    color: #2B5BAE;
+    text-decoration: none;
+
+    &:hover{
+      text-decoration: underline;
+    }
+
+    &_phone{
+      color: currentColor;
+
+      &:hover{
+        color: #2B5BAE;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__notes{
+    color: #B3B3B3;
+  }
+}
+
+.list-num{
+  margin: 0;
+  padding: 0;
+
+  &__item{
+    display: flex;
+
+    &:not(:last-of-type){
+      margin-bottom: 2rem;
+    }
+
+    &_cntr{
+      align-items: center;
+    }
+  }
+
+  &__icon{
+    flex: 0 0 2.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: #602C75;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text{
+    color: #5A5A5A;
+    font-weight: 600;
+    line-height: 1.5;
+    flex: 0 0 auto;
+    max-width: calc(100% - 3.5rem);
+    padding-left: 1em;
+  }
+}
