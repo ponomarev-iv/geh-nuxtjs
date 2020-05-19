@@ -13,13 +13,13 @@
       | качества
     template(v-if="inHeader")
       .sec-menu__wrap
-        span.sec-menu__link.sec-menu__link_more Ещё
+        span.sec-menu__link.sec-menu__link_more(:class="{'is-active': inSubMenu}") Ещё
         .sub-menu
           nuxt-link(to="/in-dev").sec-menu__link Импортозамещение
-          nuxt-link(to="/in-dev").sec-menu__link Антикоррупционная деятельность
+          nuxt-link(to="antikorrupcionnaya-deyatelnost").sec-menu__link Антикоррупционная деятельность
     template(v-else)
       nuxt-link(to="/in-dev").sec-menu__link Импортозамещение
-      nuxt-link(to="/in-dev").sec-menu__link Антикоррупционная деятельность
+      nuxt-link(to="antikorrupcionnaya-deyatelnost").sec-menu__link Антикоррупционная деятельность
 
 </template>
 
@@ -27,8 +27,14 @@
   export default {
     name: 'CompanyMenu',
     props: {
-      activeClass: String,
-      inHeader: Boolean
+      inHeader: {
+        type: Boolean,
+        default: false
+      },
+      inSubMenu: {
+        type: Boolean,
+        default: false
+      }
     }
   }
 </script>

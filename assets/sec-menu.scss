@@ -40,6 +40,18 @@
         margin-left: .5rem;
         transition: transform ease .33s;
       }
+
+      &.is-active{
+        &:before{
+          content: '';
+          width: 100%;
+          left: 0;
+          position: absolute;
+          bottom: 0;
+          height: 2px;
+          background-color: #000;
+        }
+      }
     }
   }
 
@@ -70,6 +82,13 @@
     right: 0;
     top: calc(100% + 1px);
     padding: .625rem 0 .625rem .625rem;
+
+    & .sec-menu__link.nuxt-link-exact-active{
+      &:before{
+        display: none;
+      }
+
+    }
   }
 }
 

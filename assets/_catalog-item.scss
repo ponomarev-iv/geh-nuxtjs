@@ -1,0 +1,46 @@
+.catalog-item{
+
+  &_height-mid{
+    height: 420px;
+  }
+
+  &_violet{
+
+    &:hover{
+      background-color: #602C75 !important;
+
+      & .catalog-item__btn:hover{
+        color: #602C75;
+      }
+    }
+  }
+
+  &_blue{
+
+    &:hover{
+      background-color: #2B5BAE !important;
+
+      & .catalog-item__btn:hover{
+        color: #2B5BAE;
+      }
+    }
+  }
+
+  &_green{
+
+    &:hover{
+      background-color: #44A12F !important;
+
+      & .catalog-item__btn:hover{
+        color: #44A12F;
+      }
+    }
+  }
+
+  &__name{
+
+    &_xl{
+      font-size: 2rem;
+    }
+  }
+}
