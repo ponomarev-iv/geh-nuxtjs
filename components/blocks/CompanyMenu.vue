@@ -1,21 +1,25 @@
 <template lang="pug">
   nav.sec-menu(:class="{'sec-menu_inline': inHeader}")
-    router-link(to="about").sec-menu__link О компании
-    router-link(to="history").sec-menu__link История
-    router-link(to="structura").sec-menu__link Структура компании
-    router-link(to="filialy").sec-menu__link Филиалы
-    router-link(to="/in-dev").sec-menu__link Бизнес-модель
-    router-link(to="/in-dev").sec-menu__link Миссия и стратегия
-    router-link(to="kadrovaya-politika").sec-menu__link Кадровая политика
-    router-link(to="/in-dev").sec-menu__link
+    nuxt-link(to="about").sec-menu__link О компании
+    nuxt-link(to="history").sec-menu__link История
+    nuxt-link(to="structura").sec-menu__link Структура компании
+    nuxt-link(to="filialy").sec-menu__link Филиалы
+    nuxt-link(to="/in-dev").sec-menu__link Бизнес-модель
+    nuxt-link(to="/in-dev").sec-menu__link Миссия и стратегия
+    nuxt-link(to="kadrovaya-politika").sec-menu__link Кадровая политика
+    nuxt-link(to="/in-dev").sec-menu__link
       | Политика&nbsp;
       span(v-show="!inHeader") в&nbsp;области&nbsp;
       | качества
     template(v-if="inHeader")
-      span.sec-menu__link.sec-menu__link_more Ещё
+      .sec-menu__wrap
+        span.sec-menu__link.sec-menu__link_more Ещё
+        .sub-menu
+          nuxt-link(to="/in-dev").sec-menu__link Импортозамещение
+          nuxt-link(to="/in-dev").sec-menu__link Антикоррупционная деятельность
     template(v-else)
-      router-link(to="/in-dev").sec-menu__link Импортозамещение
-      router-link(to="/in-dev").sec-menu__link Антикоррупционная деятельность
+      nuxt-link(to="/in-dev").sec-menu__link Импортозамещение
+      nuxt-link(to="/in-dev").sec-menu__link Антикоррупционная деятельность
 
 </template>
 

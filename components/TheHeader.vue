@@ -9,20 +9,20 @@
         a.header__phone-num(href="tel:+78005502259") 8 (800) 550 22 59
         span.header__phone-txt для звонков по Российской Федерации
       .header__right-col
-        router-link(to="/search").search
+        nuxt-link(to="/search").search
           template(v-if="white")
             img(src="/img/ico-search_blue.svg" width="24" height="24")
           template(v-else)
             svg.icon-search(xmlns='http://www.w3.org/2000/svg', width='100%', height='100%')
               use(xlink:href='/img/svg-lib.svg#ico-search')
-        router-link.header__btn(to="/cabinet") Склад
+        nuxt-link.header__btn(to="/cabinet") Склад
         .land-switch
           .land-switch__item(
             v-for="(item, idx) in lang"
             :key="item.id"
             :class="{'is-active': activeLang === idx}"
             @click="handlerLang(idx)") {{ item.name }}
-        router-link(to="/search").header__m-btn
+        nuxt-link(to="/search").header__m-btn
           img(src="/img/ico-gamburger.svg" v-if="white")
     .header__menu
       HeaderNavigation(:isSmall="white" :activeClass="activeClass")
