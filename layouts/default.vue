@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrapper">
     <TheHeader />
     <nuxt/>
     <template v-if="isMainPage">

@@ -14,7 +14,7 @@
         .masonry.masonry__wrap.masonry__wrap_mrg-sm.masonry_category.mb_xxl
           .masonry__col.masonry__col_half
             .masonry__row.masonry__row_mrg-mid
-              nuxt-link.catalog-item.catalog-item_ll-blue.catalog-item_violet.catalog-item_height-mid(to="/in-dev")
+              nuxt-link.catalog-item.catalog-item_ll-blue.catalog-item_violet.catalog-item_height-mid(to="antikorrupcionnaya-deyatelnost/antikorrupcionnaya-politika")
                 h2.catalog-item__name.catalog-item__name_xl Антикоррупционная <br>политика
                 span.catalog-item__btn Подробнее
             .masonry__row
@@ -34,18 +34,15 @@
 </template>
 
 <script>
-  import Breadcrumbs from '../../components/UI/Breadcrumbs';
-  import TheHeader from '../../components/TheHeader';
-  import CompanyMenu from '../../components/blocks/CompanyMenu';
-  import IconBlock from '../../components/wraps/IconBlock';
-  import TheFooter from '../../components/TheFooter';
-  import Input from '../../components/UI/Input';
-  import Upload from '../../components/UI/Upload';
+  import TheFooter from '../../../components/TheFooter';
+  import TheHeader from '../../../components/TheHeader';
+  import CompanyMenu from '../../../components/blocks/CompanyMenu';
+  import Breadcrumbs from '../../../components/UI/Breadcrumbs';
 
   export default {
     name: 'Antikorrupcionnaya-deyatelnost',
     layout: 'empty',
-    components: { Upload, Input, TheFooter, IconBlock, CompanyMenu, TheHeader, Breadcrumbs },
+    components: { Breadcrumbs, CompanyMenu, TheHeader, TheFooter },
     head () {
       return {
         title: 'Антикоррупционная деятельность | ГлобалЭнергоХолдинг'

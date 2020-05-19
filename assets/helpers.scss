@@ -1,3 +1,14 @@
+// main page wrapper
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-block{
+  flex-grow: 1;
+}
+
 //lang switch
 .land-switch {
   &__item {

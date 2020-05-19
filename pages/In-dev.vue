@@ -20,5 +20,6 @@
 <style scoped>
   .hero{
     height: auto;
+    flex-grow: 1;
   }
 </style>
