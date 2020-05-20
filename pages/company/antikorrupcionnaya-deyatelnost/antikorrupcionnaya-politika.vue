@@ -41,8 +41,8 @@
         linkArr: [
           {
             text: '&laquo;Антикоррупционная политика АО&nbsp;ГЭХ&raquo;',
-            notes: 'docx, 33.96 КБ',
-            url: 'antikorrupcionnaya-politika-ao-gehkh.docx'
+            notes: 'pdf, 5,07 МБ',
+            url: 'antikorrupcionnaya-politika-ao-gehkh.pdf'
           }
         ]
       }

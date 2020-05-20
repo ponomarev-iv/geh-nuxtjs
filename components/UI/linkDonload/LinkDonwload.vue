@@ -1,5 +1,5 @@
 <template lang="pug">
-  nuxt-link.link-download(:to="`/doc/${link.url}`")
+  a.link-download(:href="`/doc/${link.url}`")
     svg.link-download__icon(xmlns='http://www.w3.org/2000/svg', width='100%', height='100%')
       use(xlink:href='/img/svg-lib.svg#ico-download')
     .link-download__text
