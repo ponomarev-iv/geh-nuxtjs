@@ -21,3 +21,23 @@
     }
   }
 </script>
+<style scoped lang="scss">
+  .filialy-map{
+    &__filial_sibir{
+      right: 27.32%;
+      top: 23.2%;
+    }
+
+    &__filial_vost{
+      right: 1%;
+    }
+
+    &__filial_ural{
+      left: 24.4%;
+    }
+
+    &__filial_privolg{
+      left: 13.85%;
+    }
+  }
+</style>
