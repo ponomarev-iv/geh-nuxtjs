@@ -4,7 +4,7 @@
       template(v-if="step")
         span {{ item.id }}
       template(v-else)
-        img(:src="item.icon")
+        img(v-lazy="item.icon")
     .ico-block__wrap
       template(v-if="step")
         .ico-block__step Шаг {{ item.id }}
