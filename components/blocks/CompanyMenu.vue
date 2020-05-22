@@ -15,10 +15,10 @@
       .sec-menu__wrap
         span.sec-menu__link.sec-menu__link_more(:class="{'is-active': inSubMenu}") Ещё
         .sub-menu
-          nuxt-link(to="/in-dev").sec-menu__link Импортозамещение
+          nuxt-link(to="/company/importozameshchenie").sec-menu__link Импортозамещение
           nuxt-link(to="/company/antikorrupcionnaya-deyatelnost").sec-menu__link Антикоррупционная деятельность
     template(v-else)
-      nuxt-link(to="/in-dev").sec-menu__link Импортозамещение
+      nuxt-link(to="/company/importozameshchenie").sec-menu__link Импортозамещение
       nuxt-link(to="/company/antikorrupcionnaya-deyatelnost").sec-menu__link Антикоррупционная деятельность
 
 </template>

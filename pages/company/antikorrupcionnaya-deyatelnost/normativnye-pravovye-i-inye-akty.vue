@@ -10,7 +10,7 @@
           :folder="breadCrumbsFolder"
           :current="title"
         )
-        h1.section-title {{ title }}
+        h1.section-title.section-title_mrg-xl {{ title }}
         p.par В&nbsp;данном подразделе содержатся ссылки на&nbsp;тексты действующих федеральных законов, указов Президента Российской Федерации, постановлений Правительства Российской Федерации и&nbsp;иных нормативных правовых актов по&nbsp;вопросам противодействия коррупции.
         ul.link-list
           li.link-list__item(v-for="(item, idx) in linkArr" :key="idx")

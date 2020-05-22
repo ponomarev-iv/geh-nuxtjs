@@ -10,7 +10,7 @@
           :folder="breadCrumbsFolder"
           :current="title"
         )
-        h1.section-title {{ title }}
+        h1.section-title.section-title_mrg-xl {{ title }}
         p.par
           | Если Вам стало известно о&nbsp;совершении (приготовлении) работниками Предприятия АО&nbsp;&laquo;ГлобалЭнергоХолдинг&raquo; коррупционных правонарушений или каких-либо действий, нарушающих имущественные и&nbsp;иные права и&nbsp;законные интересы Предприятия АО&nbsp;&laquo;ГлобалЭнергоХолдинг&raquo;, в&nbsp;том числе
           |

@@ -31,7 +31,11 @@
               section.pp-info
                 p.pp-info__txt В&nbsp;АО&nbsp;&laquo;ГлобалЭнергоХолдинг&raquo; на&nbsp;базе современных портальных технологий активно развивается Корпоративная система управления знаниями в&nbsp;целях обеспечения обмена профессиональным опытом и&nbsp;знаниями как между работниками, так и&nbsp;между партнерами предприятия.
               p.pp__par В&nbsp;компании развита система дистанционного обучения с&nbsp;использованием корпоративного портала, к&nbsp;которому подключены все сотрудники предприятия. На&nbsp;портале содержатся более 125&nbsp;учебных курсов. Благодаря возможностям корпоративного портала обеспечено обучение и&nbsp;повышение квалификации специалистов компании. Сотрудники имеют возможность обучаться в&nbsp;удобное время, в&nbsp;том числе с&nbsp;личных компьютеров.
-          img.pp__img(src="/img/pp-img-1.png" style="top:-9rem; max-width: 39vw;")
+          Picture(
+            :img="'pp-img-1'"
+            :imgClass="'pp__img'"
+            :imgStyle="'top:-9rem; max-width: 39vw;'"
+          )
       .pp
         .c-wrap
           h2.pp__title Cистема мотивации и&nbsp;оплаты труда
@@ -46,7 +50,11 @@
               p.pp__par Переменная часть вознаграждения состоит из&nbsp;ежемесячных и&nbsp;долгосрочных премиальных выплат. Ежемесячные премиальные выплаты производятся при достижении установленных показателей деятельности за&nbsp;месяц, с&nbsp;учетом результативности каждого сотрудника.
               p.pp__par Система оплаты труда в&nbsp;АО&nbsp;&laquo;ГлобалЭнергоХолдинг&raquo; строится на&nbsp;принципах единства, прозрачности, объективности и&nbsp;конкурентоспособности заработной платы на&nbsp;рынке труда.
               p.pp__par Постоянный мониторинг рынка труда позволяет своевременно реагировать на&nbsp;изменения размера заработной платы в&nbsp;регионах присутствия с&nbsp;тем, чтобы обеспечить ее&nbsp;конкурентоспособный уровень.
-        img.pp__img(src="/img/pp-img-2.png" style="top:4rem; max-width: 39vw;")
+        Picture(
+          :img="'pp-img-2'"
+          :imgClass="'pp__img'"
+          :imgStyle="'top:4rem; max-width: 39vw;'"
+        )
       .pp(style='padding-bottom:20vw')
         .c-wrap
           h2.pp__title.pp__title_no-mrg Карьера
@@ -104,7 +112,11 @@
                 .pp-form__row.pp-form__row_last
                   button.pp-form__btn Отправить
 
-        img.pp__img(src="/img/pp-img-3.png" style="bottom:-5vh; right: -3.5vw; top: auto; max-width: 39vw;")
+        Picture(
+          :img="'pp-img-3'"
+          :imgClass="'pp__img'"
+          :imgStyle="'bottom:-5vh; right: -3.5vw; top: auto; max-width: 39vw;'"
+        )
     TheFooter
 </template>
 
@@ -116,11 +128,12 @@
   import TheFooter from '../../components/TheFooter';
   import Input from '../../components/UI/Input';
   import Upload from '../../components/UI/Upload';
+  import Picture from '../../components/UI/Picture';
 
   export default {
     name: 'Kadrovaya-politika',
     layout: 'empty',
-    components: { Upload, Input, TheFooter, IconBlock, CompanyMenu, TheHeader, Breadcrumbs },
+    components: { Picture, Upload, Input, TheFooter, IconBlock, CompanyMenu, TheHeader, Breadcrumbs },
     head () {
       return {
         title: 'ГлобалЭнергоХолдинг | Кадровая политика'

@@ -10,7 +10,7 @@
           :folder="breadCrumbsFolder"
           :current="title"
         )
-        h1.section-title {{ title }}
+        h1.section-title.section-title_mrg-xl {{ title }}
         p.par Данный подраздел обеспечивает доступ к&nbsp;списку форм обращений и&nbsp;уведомлений, заполняемых гражданами, работниками в&nbsp;рамках реализации законодательства о&nbsp;противодействии коррупции.
         LinkDonwload(v-for="(item, idx) in linkArr" :link="item" :key="idx")
     TheFooter

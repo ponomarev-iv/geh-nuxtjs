@@ -10,7 +10,7 @@
           :folder="breadCrumbsFolder"
           :current="title"
         )
-        h1.section-title {{ title }}
+        h1.section-title.section-title_mrg-xl {{ title }}
         LinkDonwload(v-for="(item, idx) in linkArr" :link="item" :key="idx")
     TheFooter
 </template>

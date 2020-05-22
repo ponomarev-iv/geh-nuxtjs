@@ -1,6 +1,6 @@
 <template lang="pug">
    .ico-block(:class="{'ico-block_step': step}")
-    .ico-block__icon
+    .ico-block__icon(:class="iconClass")
       template(v-if="step")
         span {{ item.id }}
       template(v-else)
@@ -17,8 +17,18 @@
   export default {
     name: 'IconBlock',
     props: {
-      item: Object,
-      step: Boolean
+      item: {
+        type: Object,
+        default: () => {}
+      },
+      step: {
+        type: Boolean,
+        default: false
+      },
+      iconClass: {
+        type: String,
+        default: ''
+      }
     }
   }
 </script>

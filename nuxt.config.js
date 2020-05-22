@@ -9,8 +9,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Meta description' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     htmlAttrs: {
       lang: 'ru'
@@ -20,10 +19,19 @@ module.exports = {
     '~static/css/all.css',
     '@/assets/main.scss'
   ],
+  plugins: [
+    '~/plugins/lazy-loading'
+  ],
   /*
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
+  webfontloader: {
+    events: false,
+    google: {
+      families: ['Open+Sans:400,600,700:cyrillic&display=swap']
+    }
+  },
   /*
   ** Build configuration
   */

@@ -30,6 +30,7 @@ body {
   }
 
   &__img{
+    border: none;
     position: absolute;
     right: 0;
     top: 0;
@@ -52,6 +53,10 @@ body {
 
     &_no-mrg{
       margin: 0;
+    }
+
+    &_mrg-mid{
+      margin-bottom: 1.25em;
     }
   }
 

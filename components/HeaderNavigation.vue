@@ -14,7 +14,7 @@
         nuxt-link.sub-menu__link(to="/in-dev" ) Миссия и стратегия
         nuxt-link.sub-menu__link(to="/company/kadrovaya-politika" ) Кадровая политика
         nuxt-link.sub-menu__link(to="/in-dev" ) Политика в области качества
-        nuxt-link.sub-menu__link(to="/in-dev" ) Импортозамещение
+        nuxt-link.sub-menu__link(to="/company/importozameshchenie" ) Импортозамещение
         nuxt-link.sub-menu__link(to="/company/antikorrupcionnaya-deyatelnost" ) Антикоррупционная деятельность
 
     .main-nav__link-wrap

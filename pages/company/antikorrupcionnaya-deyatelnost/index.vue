@@ -10,7 +10,7 @@
           :folder="[{id: 0, title: 'Компания', link: '/company/about'}]"
           :current="title"
         )
-        h1.section-title {{ title }}
+        h1.section-title.section-title_mrg-xl {{ title }}
         .masonry.masonry__wrap.masonry__wrap_mrg-sm.masonry_category.mb_xxl
           .masonry__col.masonry__col_half
             .masonry__row.masonry__row_mrg-mid

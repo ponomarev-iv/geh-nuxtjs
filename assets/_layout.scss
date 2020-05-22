@@ -1,0 +1,16 @@
+$color-gray: #F6F6F6;
+.c-section{
+  padding: 4rem 0;
+
+  &_gray{
+    background-color: $color-gray;
+  }
+
+  &__title{
+    font-size: 2rem;
+    line-height: 1.25;
+    font-weight: 600;
+    margin-bottom: 1.25em;
+    letter-spacing: -.1ex;
+  }
+}

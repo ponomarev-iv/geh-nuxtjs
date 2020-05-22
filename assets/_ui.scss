@@ -1,0 +1,46 @@
+// var
+$ff-base: 'Open Sans', sans-serif;
+$color-link: #2b5bae;
+$color-brd: #b3b3b3;
+
+%reset-btn{
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: $ff-base;
+}
+
+.btn{
+  @extend %reset-btn;
+
+  &_more{
+    font-weight: 600;
+    color: $color-link;
+    padding: 1.25em;
+    line-height: 1.5;
+    border-radius: .5em;
+    border: 1px dashed $color-brd;
+    text-align: center;
+    width: 100%;
+    transition: border-color ease .33s;
+
+    &:hover{
+      border-color: $color-link;
+    }
+  }
+}
+
+// accordion
+.accordion{
+  overflow: hidden;
+  transition: max-height ease .33s;
+
+  &_show{
+    overflow: visible;
+  }
+}
