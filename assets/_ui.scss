@@ -27,6 +27,17 @@
     color: currentColor;
     border: 2px solid currentColor;
     padding: .75em 2em;
+    transition: all ease .33s;
+  }
+
+  &_green{
+    color: $color-green;
+
+    &:hover{
+      color: #fff;
+      background-color: $color-green;
+      border-color: $color-green;
+    }
   }
 }
 
@@ -37,14 +48,14 @@
   text-decoration: underline;
   transition: color ease .33s;
 
+  &:hover{
+    text-decoration: none;
+  }
+
   &_in-text{
     text-decoration: none;
     color: currentColor;
     font-weight: 600;
-
-    &:hover{
-      color: $color-link;
-    }
   }
 }
 

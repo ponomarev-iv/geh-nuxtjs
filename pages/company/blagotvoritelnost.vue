@@ -68,7 +68,7 @@
 
               p.par.color-green.mt_def.mb
                 | Вы также можете скачать квитанцию для оплаты
-              a.btn.btn_def.color-green(href="") Квитанция для оплаты
+              a.btn.btn_def.btn_green(href="") Квитанция для оплаты
     TheFooter
 </template>
 
