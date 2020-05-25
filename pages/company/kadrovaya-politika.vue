@@ -124,7 +124,7 @@
   import Breadcrumbs from '../../components/UI/Breadcrumbs';
   import TheHeader from '../../components/TheHeader';
   import CompanyMenu from '../../components/blocks/CompanyMenu';
-  import IconBlock from '../../components/wraps/IconBlock';
+  import IconBlock from '../../components/wraps/iconBlock/IconBlock';
   import TheFooter from '../../components/TheFooter';
   import Input from '../../components/UI/Input';
   import Upload from '../../components/UI/Upload';

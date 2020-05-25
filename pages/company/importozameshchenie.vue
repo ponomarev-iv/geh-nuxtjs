@@ -59,7 +59,7 @@
   import CompanyMenu from '../../components/blocks/CompanyMenu';
   import Breadcrumbs from '../../components/UI/Breadcrumbs';
   import TheFooter from '../../components/TheFooter';
-  import IconBlock from '../../components/wraps/IconBlock';
+  import IconBlock from '../../components/wraps/iconBlock/IconBlock';
   import Picture from '../../components/UI/Picture';
   import LinkDonwload from '../../components/UI/linkDonload/LinkDonwload';
   export default {

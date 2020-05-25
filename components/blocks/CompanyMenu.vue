@@ -17,9 +17,11 @@
         .sub-menu
           nuxt-link(to="/company/importozameshchenie").sec-menu__link Импортозамещение
           nuxt-link(to="/company/antikorrupcionnaya-deyatelnost").sec-menu__link Антикоррупционная деятельность
+          nuxt-link(to="/company/blagotvoritelnost").sec-menu__link Благотворительность
     template(v-else)
       nuxt-link(to="/company/importozameshchenie").sec-menu__link Импортозамещение
       nuxt-link(to="/company/antikorrupcionnaya-deyatelnost").sec-menu__link Антикоррупционная деятельность
+      nuxt-link(to="/company/blagotvoritelnost").sec-menu__link Благотворительность
 
 </template>
 

@@ -16,6 +16,7 @@
         nuxt-link.sub-menu__link(to="/in-dev" ) Политика в области качества
         nuxt-link.sub-menu__link(to="/company/importozameshchenie" ) Импортозамещение
         nuxt-link.sub-menu__link(to="/company/antikorrupcionnaya-deyatelnost" ) Антикоррупционная деятельность
+        nuxt-link.sub-menu__link(to="/company/blagotvoritelnost" ) Благотворительность
 
     .main-nav__link-wrap
       nuxt-link.main-nav__link.main-nav__link_drop(to="/catalog") {{ catalogName }}

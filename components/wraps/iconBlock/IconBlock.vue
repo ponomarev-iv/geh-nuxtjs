@@ -10,7 +10,7 @@
         .ico-block__step Шаг {{ item.id }}
         .ico-block__text(v-html="item.txt")
       template(v-else)
-        .ico-block__text(v-html="item.txt")
+        .ico-block__text(v-html="item.txt" :class="textClass")
 </template>
 
 <script>
@@ -28,11 +28,13 @@
       iconClass: {
         type: String,
         default: ''
+      },
+      textClass: {
+        type: String,
+        default: ''
       }
     }
   }
 </script>
 
-<style lang="scss">
-  @import "../../assets/ico-block";
-</style>
+<style lang="scss" src="./assets/_ico-block.scss" scoped></style>

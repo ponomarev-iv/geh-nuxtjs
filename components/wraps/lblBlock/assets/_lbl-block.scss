@@ -1,0 +1,24 @@
+@import "assets/var";
+
+.lbl-block{
+  font-size: 1rem;
+  line-height: 1.5;
+
+  &:not(:last-of-type){
+    margin-bottom: 1.5rem;
+  }
+
+  &__label{
+    font-weight: 400;
+    color: $color-brd;
+    margin-bottom: .5em;
+  }
+
+  &__text{
+    color: $color-black;
+
+    &_notes{
+      color: $color-txt-gray;
+    }
+  }
+}

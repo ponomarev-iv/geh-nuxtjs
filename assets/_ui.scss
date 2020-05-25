@@ -1,21 +1,6 @@
-// var
-$ff-base: 'Open Sans', sans-serif;
-$color-link: #2b5bae;
-$color-brd: #b3b3b3;
+@import "assets/var";
 
-%reset-btn{
-  padding: 0;
-  margin: 0;
-  border: none;
-  background-color: transparent;
-  outline: none;
-  text-decoration: none;
-  cursor: pointer;
-  white-space: nowrap;
-  font-family: $ff-base;
-  font-size: 1rem;
-}
-
+// buttons
 .btn{
   @extend %reset-btn;
 
@@ -32,6 +17,33 @@ $color-brd: #b3b3b3;
 
     &:hover{
       border-color: $color-link;
+    }
+  }
+
+  &_def{
+    font-weight: 400;
+    border-radius: .25rem;
+    line-height: 1.5;
+    color: currentColor;
+    border: 2px solid currentColor;
+    padding: .75em 2em;
+  }
+}
+
+// links
+.link{
+  display: inline-block;
+  color: $color-link;
+  text-decoration: underline;
+  transition: color ease .33s;
+
+  &_in-text{
+    text-decoration: none;
+    color: currentColor;
+    font-weight: 600;
+
+    &:hover{
+      color: $color-link;
     }
   }
 }
