@@ -1,3 +1,5 @@
+@import "var";
+
 body {
   background-color: #fff;
 }
@@ -10,7 +12,7 @@ body {
 }
 
 .second-menu{
-  border-bottom: 1px solid #E5E5E5;
+  border-bottom: 1px solid $color-brd-sec;
   padding-top: 1.5rem;
   margin-bottom: .5rem;
 }
@@ -35,6 +37,17 @@ body {
     right: 0;
     top: 0;
     z-index: 1;
+
+    &_zoom{
+
+      &:after{
+
+
+      }
+      &:hover{
+        z-index: 10;
+      }
+    }
   }
 
   &__content{
@@ -61,7 +74,7 @@ body {
   }
 
   &__par{
-    color: #363636;
+    color: $color-txt;
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 1.4em;
@@ -81,7 +94,7 @@ body {
     font-weight: 700;
     font-size: 1rem;
     line-height: 1.5;
-    color: #363636;
+    color: $color-txt;
   }
 
   &__list{
@@ -89,7 +102,7 @@ body {
     margin: 1rem 0 2rem;
 
     & li{
-      color: #602C75;
+      color: $color-purple;
       position: relative;
       padding-left: 1em;
       font-size: 1rem;
@@ -99,7 +112,7 @@ body {
         content: '';
         position: absolute;
         left: 0;
-        background-color: #602C75;
+        background-color: $color-purple;
         width: .25rem;
         height: .25rem;
         top: 6px;
@@ -109,8 +122,10 @@ body {
   }
 
   &__aside{
-    padding-left: 1.25rem;
+    flex: 0 0 33%;
     max-width: 33%;
+    padding-left: 1.25rem;
+    position: relative;
   }
 }
 
@@ -118,7 +133,7 @@ body {
   margin: 2rem 0 4rem;
   background-color: #fff;
   border-radius: 1.25rem;
-  box-shadow: 0 5px 30px rgba(#000, .1);
+  box-shadow: 0 5px 30px rgba($color-black, .1);
   padding: 2rem;
 
   &__title{
@@ -138,7 +153,7 @@ body {
 
 .pp-info{
   color: #fff;
-  background-color: #602C75;
+  background-color: $color-purple;
   border-radius: 1.25rem;
   padding: 2rem;
   font-size: 1.125rem;
@@ -152,7 +167,7 @@ body {
   margin: 2rem 0;
   padding: 2rem;
   border-radius: 1.25rem;
-  box-shadow: 0 10px 30px rgba(#000, .1);
+  box-shadow: 0 10px 30px rgba($color-black, .1);
 
   &__title{
     font-size: 1.5rem;
@@ -171,7 +186,7 @@ body {
   &__btn{
     width: 100%;
     color: #fff;
-    background-color: #0059B5;
+    background-color: $color-btn-blue;
     border-radius: .25rem;
     height: 3rem;
     display: flex;
@@ -187,7 +202,7 @@ body {
     transition: box-shadow ease .3s;
 
     &:hover{
-      box-shadow: 0 10px 30px rgba(#000, .1);
+      box-shadow: 0 10px 30px rgba($color-black, .1);
     }
   }
 }

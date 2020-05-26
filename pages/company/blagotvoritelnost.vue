@@ -69,6 +69,20 @@
               p.par.color-green.mt_def.mb
                 | Вы также можете скачать квитанцию для оплаты
               a.btn.btn_def.btn_green(href="") Квитанция для оплаты
+            .pp__aside
+          Picture(
+            :img="'blagotvoritelnost-letter'"
+            :imgClass="'pp__img'"
+            :imgStyle="'max-width: 25.5vw; top: 0; left: 58%;'"
+            :isRetina="true"
+            :zoom="zoomInfo"
+          )
+          Picture(
+            :img="'blagotvoritelnost'"
+            :imgClass="'pp__img'"
+            :imgStyle="'max-width: 40vw; top: 27.5vw;'"
+            :isRetina="true"
+          )
     TheFooter
 </template>
 
@@ -79,10 +93,11 @@
   import LblBlock from '../../components/wraps/lblBlock/LblBlock';
   import IconBlock from '../../components/wraps/iconBlock/IconBlock';
   import TheFooter from '../../components/TheFooter';
+  import Picture from '../../components/UI/Picture';
   export default {
     name: 'Blagotvoritelnost',
     layout: 'empty',
-    components: { TheFooter, IconBlock, LblBlock, Breadcrumbs, CompanyMenu, TheHeader },
+    components: { Picture, TheFooter, IconBlock, LblBlock, Breadcrumbs, CompanyMenu, TheHeader },
     head () {
       return {
         title: 'ГлобалЭнергоХолдинг | Благотворительность'
@@ -189,7 +204,12 @@
             txt: '100% полученных средств будут потрачены на&nbsp;административные расходы\n' +
               'фонда. Сделать свой вклад во&nbsp;все чудеса сразу можно по&nbsp;реквизитам:'
           }
-        ]
+        ],
+        zoomInfo: {
+          show: true,
+          title: 'Увеличить',
+          icon: 'icon-loop.svg'
+        }
       }
     }
   }
