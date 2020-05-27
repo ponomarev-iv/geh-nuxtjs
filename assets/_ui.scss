@@ -19,26 +19,6 @@
       border-color: $color-link;
     }
   }
-
-  &_def{
-    font-weight: 400;
-    border-radius: .25rem;
-    line-height: 1.5;
-    color: currentColor;
-    border: 2px solid currentColor;
-    padding: .75em 2em;
-    transition: all ease .33s;
-  }
-
-  &_green{
-    color: $color-green;
-
-    &:hover{
-      color: #fff;
-      background-color: $color-green;
-      border-color: $color-green;
-    }
-  }
 }
 
 // links
