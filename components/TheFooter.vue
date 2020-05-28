@@ -28,9 +28,9 @@
             router-link.footer__nav-link(to="/contacts") Контакты
           .footer__nav-col
             router-link.footer__nav-link(to="/cabinet") Кабинет
-            router-link.footer__nav-link(to="/in-dev") Презентация
-            router-link.footer__nav-link(to="/in-dev") Оставить заявку
-            router-link.footer__nav-link(to="/in-dev") Заказать звонок
+            a.footer__nav-link(href="mailto:info@globalenergoholding.ru") Оставить заявку
+            a.footer__nav-link(href="/doc/referens-list-ao-globalehnergoholding.pdf") Референс-лист
+            a.footer__nav-link(href="/doc/kp-ao-globalehnergoholding.pdf") Презентация
 
         .footer__social-block.soc-link
           .soc-link__item.soc-link__item_vk
