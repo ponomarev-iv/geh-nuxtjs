@@ -1,7 +1,9 @@
 <template lang="pug">
-  div
-    .header-wrap.header-wrap_company
-      .title-block
+  div.wrapper
+    TheHeader(:white="true" :activeClass="'company'")
+    .second-menu
+      .c-wrap
+        CompanyMenu(:inHeader="true")
     main.main-block
       .c-wrap
         .flex-row
@@ -53,8 +55,8 @@
               h3.content-title Территория обслуживания
               FilialyItem
           aside.main-block__menu
-            CompanyMenu
         FilialMap
+    TheFooter
 </template>
 
 <script>
@@ -63,10 +65,13 @@
   import InfoBlock from '../../components/blocks/InfoBlock';
   import FilialMap from '../../components/blocks/Filial/FilialMap';
   import FilialyItem from '../../components/blocks/Filial/FilialyItem';
+  import TheHeader from '../../components/TheHeader';
+  import TheFooter from '../../components/TheFooter';
 
   export default {
     name: 'Filialy',
-    components: { FilialyItem, FilialMap, InfoBlock, Breadcrumbs, CompanyMenu },
+    layout: 'empty',
+    components: { TheFooter, TheHeader, FilialyItem, FilialMap, InfoBlock, Breadcrumbs, CompanyMenu },
     head () {
       return {
         title: 'ГлобалЭнергоХолдинг | Филиалы'

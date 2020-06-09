@@ -1,7 +1,9 @@
 <template lang="pug">
-  div
-    .header-wrap.header-wrap_company
-      .title-block
+  div.wrapper
+    TheHeader(:white="true" :activeClass="'company'")
+    .second-menu
+      .c-wrap
+        CompanyMenu(:inHeader="true")
     main.main-block
       .c-wrap
         .flex-row
@@ -16,7 +18,6 @@
             p Одной из&nbsp;основных целей деятельности АО&nbsp;&laquo;ГлобалЭнергоХолдинг&raquo; является благополучие акционеров и&nbsp;партнеров предприятия. Наше стремление развивать долгосрочные взаимовыгодные отношения&nbsp;&mdash; является гарантией надежного и&nbsp;честного сотрудничества.
             p АО&nbsp;&laquo;ГлобалЭнергоХолдинг&raquo; работает на&nbsp;рынке не&nbsp;так давно, но&nbsp;опыт наших сотрудников в&nbsp;данной отрасли более 10&nbsp;лет. Сотрудничая с&nbsp;нами, Вы&nbsp;получаете знания и&nbsp;мастерство лучших специалистов, не&nbsp;переплачивая за&nbsp;громкое имя.
           aside.main-block__menu
-            CompanyMenu
     article.c-block
       .c-wrap
         section.flex-row.flex-row_valign-center
@@ -40,14 +41,18 @@
     article.concluding
       .c-wrap
         p Применяя новые технологии и&nbsp;имеющийся опыт, мы&nbsp;задаем высокие стандарты ведения бизнеса промышленной отрасли, которые без сомнения оказывают благоприятные воздействия на&nbsp;наших партнеров и&nbsp;экономику России в&nbsp;целом.
+    TheFooter
 </template>
 
 <script>
   import Breadcrumbs from '../../components/UI/Breadcrumbs';
   import CompanyMenu from '../../components/blocks/CompanyMenu';
+  import TheHeader from '../../components/TheHeader';
+  import TheFooter from '../../components/TheFooter';
   export default {
     name: 'About',
-    components: { CompanyMenu, Breadcrumbs },
+    layout: 'empty',
+    components: { TheFooter, TheHeader, CompanyMenu, Breadcrumbs },
     head () {
       return {
         title: 'ГлобалЭнергоХолдинг | О компании'

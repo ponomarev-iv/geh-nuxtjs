@@ -12,6 +12,10 @@
     padding-bottom: 5rem;
     border-bottom: none;
   }
+
+  @at-root .wrapper & {
+    padding-top: 72px;
+  }
 }
 
 .nowrap{

@@ -1,7 +1,6 @@
 <template lang="pug">
-  div
-    .header-wrap.header-wrap_contact
-      .title-block
+  div.wrapper
+    TheHeader(:white="true")
     main.main-block.contacts
       .c-wrap
         .flex-row(style="margin-bottom:40px;")
@@ -49,16 +48,20 @@
                 p.ico-box__txt Если Вас не&nbsp;устраивает качество сервиса, Вы&nbsp;можете<br> обратиться по&nbsp;телефону горячей линии <a class="ico-box__txt_accent" href="tel:88005502259">8&nbsp;800&nbsp;550 22 59</a><br>
                   | Мы&nbsp;благодарны за&nbsp;Ваши обращения!
           FeedbackForm
+    TheFooter
 </template>
 
 <script>
   import Breadcrumbs from '../components/UI/Breadcrumbs';
   import { VueTabs, VTab } from 'vue-nav-tabs'
   import FeedbackForm from '../components/blocks/FeedbackForm';
+  import TheHeader from '../components/TheHeader';
+  import TheFooter from '../components/TheFooter';
 
   export default {
     name: 'Contacts',
-    components: { FeedbackForm, Breadcrumbs, VueTabs, VTab },
+    layout: 'empty',
+    components: { TheFooter, TheHeader, FeedbackForm, Breadcrumbs, VueTabs, VTab },
     head () {
       return {
         title: 'ГлобалЭнергоХолдинг | Контакты'

@@ -1,7 +1,9 @@
 <template lang="pug">
-  div
-    .header-wrap.header-wrap_history
-      .title-block
+  div.wrapper
+    TheHeader(:white="true" :activeClass="'company'")
+    .second-menu
+      .c-wrap
+        CompanyMenu(:inHeader="true")
     main.main-block
       .c-wrap
         .flex-row
@@ -19,7 +21,6 @@
               li Опыт и&nbsp;личная ответственность. Люди являются ключом нашего успеха.<br>
                 | Мы&nbsp;с&nbsp;уважением относимся друг к&nbsp;другу и&nbsp;ожидаем, что все наши сотрудники будут руководствоваться чувством личной ответственности. У&nbsp;нас работают компетентные и&nbsp;опытные сотрудники, обладающие знаниями и&nbsp;умениями самых лучших специалистов энергетической отрасли, которым мы&nbsp;предоставляем возможность постоянно улучшать показатели уровня квалификации, развиваем компетентность во&nbsp;всех аспектах их&nbsp;работы, используя личностные и&nbsp;профессиональные тренинги и&nbsp;семинары.
           aside.main-block__menu
-            CompanyMenu
     article.c-block
       .c-wrap
         section.flex-row.flex-row_valign-center
@@ -40,15 +41,18 @@
           .col-6
             .c-block__txt
               p Используя новые технологии и&nbsp;оценивая каждую мельчайшую деталь как основу создания общего полотна, мы&nbsp;задаем высокие стандарты промышленной отрасли на&nbsp;благо наших партнеров и&nbsp;экономики России.
-
+    TheFooter
 </template>
 
 <script>
   import CompanyMenu from '../../components/blocks/CompanyMenu';
   import Breadcrumbs from '../../components/UI/Breadcrumbs';
+  import TheHeader from '../../components/TheHeader';
+  import TheFooter from '../../components/TheFooter';
   export default {
     name: 'History',
-    components: { Breadcrumbs, CompanyMenu },
+    layout: 'empty',
+    components: { TheFooter, TheHeader, Breadcrumbs, CompanyMenu },
     head () {
       return {
         title: 'ГлобалЭнергоХолдинг | История'

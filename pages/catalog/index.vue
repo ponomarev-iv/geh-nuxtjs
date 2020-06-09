@@ -1,7 +1,6 @@
 <template lang="pug">
-  div
-    .header-wrap.header-wrap_catalog
-      .title-block
+  div.wrapper
+    TheHeader(:white="true")
     main.main-block
       .c-wrap
         Breadcrumbs(
@@ -31,13 +30,17 @@
               router-link.catalog-item.catalog-item_alternative(to="/catalog/alternativnaya-energetika")
                 h2.catalog-item__name Альтернативная<br> энергетика
                 span.catalog-item__btn Подробнее
+    TheFooter
 </template>
 
 <script>
   import Breadcrumbs from '../../components/UI/Breadcrumbs';
+  import TheHeader from '../../components/TheHeader';
+  import TheFooter from '../../components/TheFooter';
   export default {
     name: 'index',
-    components: { Breadcrumbs },
+    layout: 'empty',
+    components: { TheFooter, TheHeader, Breadcrumbs },
     head () {
       return {
         title: 'ГлобалЭнергоХолдинг | Каталог'

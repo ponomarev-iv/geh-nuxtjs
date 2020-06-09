@@ -1,7 +1,6 @@
 <template lang="pug">
-  div
-    .header-wrap.header-wrap_nuclear
-      .title-block
+  div.wrapper
+    TheHeader(:white="true")
     main.main-block
       .c-wrap
         Breadcrumbs(
@@ -103,14 +102,17 @@
                   | -&nbsp;синхронные
                   | -&nbsp;асинхронные
                 span.catalog-item__btn Подробнее
-
+    TheFooter
 </template>
 
 <script>
   import Breadcrumbs from '../../components/UI/Breadcrumbs';
+  import TheHeader from '../../components/TheHeader';
+  import TheFooter from '../../components/TheFooter';
   export default {
     name: 'Gidroenergetika',
-    components: { Breadcrumbs },
+    layout: 'empty',
+    components: { TheFooter, TheHeader, Breadcrumbs },
     head () {
       return {
         title: 'Гидроэнергетика | ГлобалЭнергоХолдинг'
