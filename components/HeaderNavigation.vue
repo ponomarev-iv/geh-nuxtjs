@@ -27,7 +27,7 @@
         nuxt-link.sub-menu__link(to="/catalog/nuclear-energy" ) Ядерная энергетика
         nuxt-link.sub-menu__link(to="/catalog/alternativnaya-energetika" ) Альтернативная энергетика
 
-    .main-nav__link-wrap(v-if="!isSmall")
+    .main-nav__link-wrap
       nuxt-link.main-nav__link.main-nav__link_drop(to="/in-dev#pr-vo") Производство
       .sub-menu
         nuxt-link.sub-menu__link(to="/in-dev") О производстве
