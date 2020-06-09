@@ -20,7 +20,8 @@ module.exports = {
     '@/assets/main.scss'
   ],
   plugins: [
-    '~/plugins/lazy-loading'
+    '~/plugins/lazy-loading',
+    '~/plugins/v-img'
   ],
   /*
   ** Customize the progress bar color
