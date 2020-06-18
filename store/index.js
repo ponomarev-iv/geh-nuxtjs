@@ -8,6 +8,12 @@ export const state = () => ({
   lang: 0
 });
 
+export const actions = {
+  setFilial ({ commit }, payload) {
+    commit('SET_FILIAL', payload)
+  }
+}
+
 export const mutations = {
   SET_FILIAL (state, data) {
     state.filialActive = data

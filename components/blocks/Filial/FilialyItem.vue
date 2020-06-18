@@ -16,7 +16,7 @@
       )
       span Уральский федеральный округ
     .filialy__item.js-filial(
-      @mouseover="hover('vost')"
+      @mouseover="hover('dv')"
       @mouseleave="hover('')"
       )
       span Дальневосточный федеральный округ
@@ -27,7 +27,7 @@
     name: 'FilialyItem',
     methods: {
       hover (el) {
-        this.$store.commit('SET_FILIAL', el)
+        this.$store.dispatch('setFilial', el)
       }
     }
   }
