@@ -3,7 +3,7 @@
     nuxt-link(to="/company/about").sec-menu__link О компании
     nuxt-link(to="/company/history").sec-menu__link История
     nuxt-link(to="/company/structura").sec-menu__link Структура компании
-    nuxt-link(to="/company/filialy").sec-menu__link Филиалы
+    nuxt-link(to="/in-dev").sec-menu__link Филиалы
     nuxt-link(to="/in-dev").sec-menu__link Бизнес-модель
     nuxt-link(to="/in-dev").sec-menu__link Миссия и стратегия
     nuxt-link(to="/company/kadrovaya-politika").sec-menu__link Кадровая политика
