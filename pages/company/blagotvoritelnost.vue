@@ -65,14 +65,14 @@
                 a.link.link_in-text(href="mailto:info@dedmorozim.ru") info@dedmorozim.ru
                 | .
               LblBlock.mt(v-for="item in companyInfo" :item="item" :key="item.id")
-            .pp__aside
-              Picture(
-                :img="'blagotvoritelnost-letter'"
-                :imgClass="'pp__img'"
-                :imgStyle="'width: 25.5vw; top: 0; left: 0;'"
-                :isRetina="true"
-                :zoom="zoomInfo"
-              )
+            // .pp__aside
+              // Picture(
+                // :img="'blagotvoritelnost-letter'"
+                // :imgClass="'pp__img'"
+                // :imgStyle="'width: 25.5vw; top: 0; left: 0;'"
+                // :isRetina="true"
+                // :zoom="zoomInfo"
+              // )
           Picture(
             :img="'blagotvoritelnost'"
             :imgClass="'pp__img'"
