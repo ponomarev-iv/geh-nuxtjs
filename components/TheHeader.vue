@@ -6,7 +6,7 @@
       CompanyLogo
         img(:src="srcLogo" alt="ГлобалЭнергоХолдинг")
       .header__phone
-        a.header__phone-num(href="tel:+78005502259") 8 (800) 550 22 59
+        a.header__phone-num(href="tel:+88004443940") 8 (800) 444 39 40
         span.header__phone-txt для звонков по Российской Федерации
       .header__right-col
         nuxt-link(to="/search").search
@@ -56,7 +56,7 @@
     },
     computed: {
       srcLogo () {
-        return (!this.white) ? '/img/logo.png' : '/img/logo-white.svg'
+        return (!this.white) ? '/img/logo-geh-white.svg' : '/img/logo-white.svg'
       },
       activeLang () {
         return this.$store.state.lang

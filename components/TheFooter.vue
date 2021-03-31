@@ -2,18 +2,15 @@
   footer.footer
     .c-wrap.flex-row
       .footer__col
-        img.footer__logo(src="/img/footer-logo.png" alt="logo")
+        img.footer__logo(src="/img/logo-footer-white.svg" alt="logo")
+        // img.footer__logo(src="/img/logo-geh-white.svg" alt="logo")
         .footer__par
           p.footer__lbl Бесплатный звонок по России
-          a(href="tel:88005502259").footer__phone 8 800 550 22 59
+          a(href="tel:88004443940").footer__phone 8 800 444 39 40
         .footer__par
           p.footer__lbl Головной офис
-          p.footer__adres 614002, г. Пермь, ул. Островского, д.&nbsp;59/1, 13&nbsp;этаж<br>
-            a(href="tel:+73422008595").footer__phone-link +7 (342) 200 85 95
-        //.footer__par
-          p.footer__lbl Приволжский филиал
-          p.footer__adres 614015, г. Пермь, ул. Екатерининская, д.&nbsp;120, 1&nbsp;этаж<br>
-            a(href="tel:+73422008595").footer__phone-link +7 (342) 200 85 95
+          p.footer__adres 614007, г. Пермь, ул. Николая Островского, д.&nbsp;59/1, строение БЦ &laquo;Парус&raquo;, 13&nbsp;этаж<br>
+            a(href="tel:+73422482444").footer__phone-link +7 (342) 248 24 44
       .footer__col.footer__col_right
         nav.footer__nav
           .footer__nav-col

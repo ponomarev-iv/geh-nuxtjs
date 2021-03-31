@@ -14,13 +14,14 @@
             router-link.site-map__link(to="/company/about") О компании
             router-link.site-map__link(to="/company/history") История
             router-link.site-map__link(to="/company/structura") Структкра компании
-            router-link.site-map__link(to="/company/filialy") Филиалы
-            router-link.site-map__link(to="in-dev") Бизнес-модель
-            router-link.site-map__link(to="in-dev") Миссия и статегия
-            router-link.site-map__link(to="in-dev") Кадровая политика
-            router-link.site-map__link(to="in-dev") Политика в области качества
-            router-link.site-map__link(to="in-dev") Ипортозамещение
-            router-link.site-map__link(to="in-dev") Антикоррупционная деятельность
+            // router-link.site-map__link(to="/company/filialy") Филиалы
+            // router-link.site-map__link(to="in-dev") Бизнес-модель
+            // router-link.site-map__link(to="in-dev") Миссия и статегия
+            router-link.site-map__link(to="/company/kadrovaya-politika") Кадровая политика
+            // router-link.site-map__link(to="in-dev") Политика в области качества
+            router-link.site-map__link(to="/company/importozameshchenie") Ипортозамещение
+            router-link.site-map__link(to="/company/antikorrupcionnaya-deyatelnost") Антикоррупционная деятельность
+            router-link.site-map__link(to="/company/blagotvoritelnost") Благотворительность
           .site-map__col
             router-link.site-map__title(to="/catalog") Отраслевые направления
             router-link.site-map__link.site-map__link_drop(to="/catalog/elektricheskaya-set") Электрическая сеть
