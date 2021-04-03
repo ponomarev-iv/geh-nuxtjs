@@ -3,15 +3,15 @@
     .info-block__col
       p.adres
         span Адрес:&nbsp;
-        | 614015, г. Пермь,  ул. Екатерининская, д. 120, 1 этаж&nbsp;
+        | 614007, г. Пермь, ул. Николая Островского, д.&nbsp;59/1, строение БЦ &laquo;Парус&raquo;, 13&nbsp;этаж&nbsp;
         a(href="#").adres__link На карте
       p.adres
         span Телефон/факс:&nbsp;
-        a(href="tel:+73422008595") +7 (342) 200 85 95,&nbsp;
-        a(href="tel:+78005502259") 8 800 550 22 59
+        a(href="tel:+73422482444") +7(342) 248-24-44,&nbsp;
+        a(href="tel:+78004443940") +7(800) 444-39-40
       p.adres
         span Email:&nbsp;
-        a(href="mailto:info@globalenergoholding.ru") info@globalenergoholding.ru
+        a(href="mailto:info@globalenergoholding.com") info@globalenergoholding.com
     .info-block__col.info-block__col_sm
       .flex-row
         p.adres

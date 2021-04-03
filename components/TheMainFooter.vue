@@ -2,7 +2,7 @@
   footer.main-footer.main-footer_fixed(ref="foot")
     .c-wrap
       .main-footer__nav
-        a.main-footer__link(href="mailto:info@globalenergoholding.ru") Оставить заявку
+        a.main-footer__link(href="mailto:sale@globalenergoholding.com") Оставить заявку
         // a.main-footer__link(href="/doc/referens-list-ao-globalehnergoholding.pdf") Референс-лист
         // a.main-footer__link(href="/doc/kp-ao-globalehnergoholding.pdf") Презентация
       .main-footer__rigth-col.soc-link

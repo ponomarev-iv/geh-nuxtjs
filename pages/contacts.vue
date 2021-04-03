@@ -13,13 +13,13 @@
                 | 614007, г. Пермь, ул.  Николая Островского, д.&nbsp;59/1, строение БЦ &laquo;Парус&raquo;, 13&nbsp;этаж
               p.adres
                 span Телефон/факс:&nbsp;
-                a(href="tel:+73422482444") +7&nbsp;(342)&nbsp;248&nbsp;24&nbsp;44
+                a(href="tel:+73422482444") +7(342) 248-24-44
               p.adres
                 span Для звонков по Российской Федерации:&nbsp;
-                a(href="tel:+78004443940") 8&nbsp;(800)&nbsp;444&nbsp;39&nbsp;40
+                a(href="tel:+78004443940") +7(800) 444-39-40
               p.adres
                 span Email:&nbsp;
-                a(href="mailto:office@globalenergoholding.ru") office@globalenergoholding.ru
+                a(href="mailto:office@globalenergoholding.com") office@globalenergoholding.com
             //
               vue-tabs(
                 type="pills"
@@ -59,7 +59,7 @@
             .content-block.info-block
               .ico-box
                 img.ico-box__icon(src="/img/ico-callback.svg")
-                p.ico-box__txt Если Вас не&nbsp;устраивает качество сервиса, Вы&nbsp;можете<br> обратиться по&nbsp;телефону горячей линии <a class="ico-box__txt_accent" href="tel:88004443940">8&nbsp;800&nbsp;444 39 40</a><br>
+                p.ico-box__txt Если Вас не&nbsp;устраивает качество сервиса, Вы&nbsp;можете<br> обратиться по&nbsp;телефону горячей линии <a class="ico-box__txt_accent" href="tel:+78004443940">+7(800) 444-39-40</a><br>
                   | Мы&nbsp;благодарны за&nbsp;Ваши обращения!
           FeedbackForm
     TheFooter

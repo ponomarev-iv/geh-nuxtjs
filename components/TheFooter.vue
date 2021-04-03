@@ -6,11 +6,11 @@
         // img.footer__logo(src="/img/logo-geh-white.svg" alt="logo")
         .footer__par
           p.footer__lbl Бесплатный звонок по России
-          a(href="tel:88004443940").footer__phone 8 800 444 39 40
+          a(href="tel:+78004443940").footer__phone +7(800) 444-39-40
         .footer__par
           p.footer__lbl Головной офис
           p.footer__adres 614007, г. Пермь, ул. Николая Островского, д.&nbsp;59/1, строение БЦ &laquo;Парус&raquo;, 13&nbsp;этаж<br>
-            a(href="tel:+73422482444").footer__phone-link +7 (342) 248 24 44
+            a(href="tel:+73422482444").footer__phone-link +7(342) 248-24-44
       .footer__col.footer__col_right
         nav.footer__nav
           .footer__nav-col
@@ -25,7 +25,7 @@
             router-link.footer__nav-link(to="/contacts") Контакты
           .footer__nav-col
             router-link.footer__nav-link(to="/cabinet") Кабинет
-            a.footer__nav-link(href="mailto:info@globalenergoholding.ru") Оставить заявку
+            a.footer__nav-link(href="mailto:sale@globalenergoholding.com") Оставить заявку
             // a.footer__nav-link(href="/doc/referens-list-ao-globalehnergoholding.pdf") Референс-лист
             // a.footer__nav-link(href="/doc/kp-ao-globalehnergoholding.pdf") Презентация
 

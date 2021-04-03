@@ -17,12 +17,12 @@
           li.list__item
             | Электронная почта:
             |
-            a.list__link(href="mailto:help@globalenergoholding.ru") help@globalenergoholding.ru
+            a.list__link(href="mailto:help@globalenergoholding.com") help@globalenergoholding.com
           li.list__item
             | Телефон:
             |
-            a.list__link.list__link_phone(href="tel:+78005502259")
-              | 8 (800) 550 22 59
+            a.list__link.list__link_phone(href="tel:+78004443940")
+              | +7(800) 444-39-40
             span.list__notes
               |
               | (бесплатно из&nbsp;любой точки страны)
