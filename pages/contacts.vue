@@ -9,8 +9,14 @@
             h1.section-title {{ title }}
             .content-block
               p.adres
-                span Адрес:&nbsp;
-                | 614007, г. Пермь, ул.  Николая Островского, д.&nbsp;59/1, строение БЦ &laquo;Парус&raquo;, 13&nbsp;этаж
+                span Адрес офиса:&nbsp;
+                | 614007, г.&nbsp;Пермь, ул.&nbsp;Николая Островского, д.&nbsp;59/1, стр.&nbsp;БЦ &laquo;Парус&raquo;, 13&nbsp;этаж.
+              p.adres
+                span Адрес производства:&nbsp;
+                | 614055, г.&nbsp;Пермь, ул.&nbsp;Промышленная, д.&nbsp;125.
+              p.adres
+                span Адрес склада:&nbsp;
+                | 614031, г.&nbsp;Пермь, ул.&nbsp;Докучаева, д.&nbsp;33В.
               p.adres
                 span Телефон/факс:&nbsp;
                 a(href="tel:+73422482444") +7(342) 248-24-44
