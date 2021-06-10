@@ -2,7 +2,8 @@
   footer.main-footer.main-footer_fixed(ref="foot")
     .c-wrap
       .main-footer__nav
-        a.main-footer__link(href="mailto:sale@globalenergoholding.com") Оставить заявку
+        a.main-footer__link(href="mailto:sale@globalenergoholding.com")
+          | Оставить заявку
         // a.main-footer__link(href="/doc/referens-list-ao-globalehnergoholding.pdf") Референс-лист
         // a.main-footer__link(href="/doc/kp-ao-globalehnergoholding.pdf") Презентация
       .main-footer__rigth-col.soc-link
@@ -26,3 +27,21 @@
     }
   }
 </script>
+<style lang="scss" scoped>
+  .main-footer{
+    @media screen and (max-width: 767px) {
+      padding: 1.25rem 0;
+
+      & .c-wrap{
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      &__rigth-col{
+        flex: 0 0 100%;
+        margin: 1rem 0 0;
+        justify-content: space-between;
+      }
+    }
+  }
+</style>
