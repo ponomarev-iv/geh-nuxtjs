@@ -1,5 +1,6 @@
 <template lang="pug">
-  div(@wheel="handlerWheel")
+  div.m-page(@wheel="handlerWheel")
+    .m-page__bg
     video(playsinline autoplay muted pip="false" data-play="0" loop)
       source#channel(src="/video/002.mp4" type="video/mp4")
     .fade-video

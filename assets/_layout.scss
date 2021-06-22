@@ -29,3 +29,24 @@ body {
     padding: 0 1.25rem;
   }
 }
+
+.hero {
+  @media screen and (max-width: 980px) {
+    & .c-wrap{
+      justify-content: flex-start;
+      padding-top: 4rem;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    & .close-btn{
+      top: 1.25rem;
+      right: 1.25rem;
+    }
+
+    & .search__form{
+      margin-bottom: 2rem;
+    }
+  }
+}
+

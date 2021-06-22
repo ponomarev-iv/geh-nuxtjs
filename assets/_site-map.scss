@@ -1,0 +1,40 @@
+.site-map{
+  @media screen and (max-width: 980px) {
+    &.flex-row{
+      flex-wrap: wrap;
+    }
+
+    &__col{
+      flex-basis: 50%;
+      max-width: 50%;
+      align-items: flex-start;
+
+      &:last-child{
+        margin-top: 2rem;
+      }
+    }
+
+    &__title{
+      margin-top: 0;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    padding-bottom: 10vh;
+    overflow: auto;
+
+    &__col{
+      flex-basis: 100%;
+      max-width: unset;
+      margin-bottom: 2rem;
+
+      &:last-child{
+        margin: 0;
+      }
+    }
+  }
+}

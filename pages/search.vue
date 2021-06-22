@@ -1,10 +1,11 @@
 <template lang="pug">
-  div
+  div.m-page
+    .m-page__bg
     video(playsinline autoplay muted pip="false" data-play="0" loop)
       source#channel(src="/video/002.mp4" type="video/mp4")
     .fade-video.dark
     main.hero
-      router-link(to="/").close-btn
+      router-link.close-btn(to="/")
       .c-wrap.search
         form.search__form
           input.search__input(placeholder='Поиск по сайту' )
