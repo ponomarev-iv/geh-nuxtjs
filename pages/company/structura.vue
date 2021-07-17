@@ -16,7 +16,8 @@
           aside.main-block__menu
     article.c-block.structura
       .c-wrap
-        img(src="/img/structura.jpg")
+        .img-no-resp-wrap
+          img(src="/img/structura.jpg" loading="lazy")
     TheFooter
 </template>
 

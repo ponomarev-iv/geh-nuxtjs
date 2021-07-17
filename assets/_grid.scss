@@ -1,0 +1,23 @@
+.col-md-4{
+  @media screen and (max-width: 768px) {
+    width: 33.33%;
+  }
+}
+
+.col-md-8{
+  @media screen and (max-width: 768px) {
+    width: 66.66%;
+  }
+}
+
+.col-sm-12{
+  @media screen and (max-width: 640px) {
+    width: 100%;
+  }
+}
+
+.col-sm-order-1{
+  @media screen and (max-width: 640px) {
+    order: -1;
+  }
+}

@@ -12,6 +12,10 @@
     & .header__first-line {
       padding: 1rem 2.5rem;
       border-bottom: 1px solid #E5E5E5;
+
+      @media screen and (max-width: 767px){
+        padding: .75rem 1.25rem;
+      }
     }
 
     & .header__phone-num{
@@ -51,6 +55,10 @@
 
     & .header__right-col{
       width: 21.875rem;
+
+      @media screen and (max-width: 1180px){
+        width: auto;
+      }
     }
 
     & .main-nav{

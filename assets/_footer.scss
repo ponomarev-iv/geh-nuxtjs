@@ -1,0 +1,41 @@
+.footer{
+
+  @media screen and (max-width: 980px){
+    padding: 3rem 0;
+
+    & .flex-row{
+      flex-wrap: wrap;
+    }
+
+    & .footer__col_right{
+      margin: 2rem 0 0;
+    }
+
+    & .footer__social-block{
+      margin-top: 2rem;
+      justify-content: flex-start;
+    }
+
+    & .footer__nav{
+      width: 100%;
+    }
+
+    & .footer__nav-col{
+      flex-basis: 33%;
+      align-items: flex-start;
+    }
+  }
+
+  @media screen and (max-width: 767px){
+    padding: 2rem 0;
+
+    & .footer__nav{
+      flex-wrap: wrap;
+    }
+
+    & .footer__nav-col{
+      flex-basis: 100%;
+      padding: 0;
+    }
+  }
+}

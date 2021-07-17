@@ -5,7 +5,8 @@
       source#channel(src="/video/002.mp4" type="video/mp4")
     .fade-video.dark
     main.hero
-      router-link.close-btn(to="/")
+      //router-link.close-btn(to="/")
+      button.close-btn(@click="handlerClose()")
       .c-wrap.search
         form.search__form
           input.search__input(placeholder='Поиск по сайту' )
@@ -44,6 +45,11 @@
 <script>
   export default {
     name: 'Search',
-    layout: 'empty'
+    layout: 'empty',
+    methods: {
+      handlerClose () {
+        this.$router.back()
+      }
+    }
   }
 </script>

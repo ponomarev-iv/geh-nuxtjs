@@ -1,5 +1,19 @@
+//typo
+strong{
+  font-weight: 700;
+}
+
 // title
 .section-title{
+
+  @media screen and (max-width: 980px) {
+    font-size: 2rem;
+    margin-bottom: 1em;
+  }
+
+  @media screen and (max-width: 640px) {
+    font-size: 1.5rem;
+  }
 
   &_mrg-xl{
     margin-bottom: 4rem;
@@ -14,7 +28,18 @@
   margin-bottom: 2.5rem;
 }
 
-// lists
+//concluding
+.concluding{
+  @media screen and (max-width: 980px) {
+    padding: 2.5rem 0;
+  }
+
+  @media screen and (max-width: 640px) {
+    padding: 1.5rem 0;
+  }
+}
+
+  // lists
 .link-list{
 
   &__item{

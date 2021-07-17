@@ -1,3 +1,15 @@
+.second-menu{
+  border-bottom: 1px solid $color-brd-sec;
+  padding-top: 1.5rem;
+  margin-bottom: .5rem;
+
+  @media screen and (max-width: 1180px) {
+    overflow-y: auto;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+}
+
 .sec-menu{
   align-items: flex-start;
 
@@ -13,6 +25,10 @@
       font-size: .875rem;
       line-height: 1.55em;
       margin-bottom: 0;
+
+      @media screen and (max-width: 767px){
+        padding: .875rem .5rem;
+      }
 
       &.nuxt-link-exact-active{
         &:before{

@@ -1,0 +1,64 @@
+.c-block{
+  @media screen and (max-width: 1180px) {
+    padding: 3.75rem 0; //60px
+
+    &.structura{
+      padding-bottom: 3rem;
+    }
+  }
+
+  @media screen and (max-width: 980px) {
+    padding: 2.5rem 0;
+
+    &.structura{
+      padding-top: 0;
+      padding-bottom: 2.5rem;
+    }
+
+    & .flex-row{
+      &:not(:last-of-type){
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    padding: 1.5rem 0;
+
+    &.structura{
+      padding-bottom: 1.5rem;
+    }
+
+    & .flex-row{
+      flex-wrap: wrap;
+    }
+  }
+
+  &__txt{
+    @media screen and (max-width: 1180px) {
+      padding-left: 1.5rem;
+    }
+
+    @media screen and (max-width: 640px) {
+      padding-left: 0;
+      padding-bottom: 1.5rem;
+    }
+
+    @media screen and (max-width: 980px) {
+      & p{
+        font-size: 1rem;
+      }
+    }
+
+    &_first{
+      @media screen and (max-width: 1180px){
+        padding-left: 0;
+        padding-right: 1.5rem;
+      }
+
+      @media screen and (max-width: 640px) {
+        padding-right: 0;
+      }
+    }
+  }
+}

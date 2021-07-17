@@ -30,21 +30,21 @@
     article.c-block
       .c-wrap
         section.flex-row.flex-row_valign-center
-          .col-6
+          .col-6.col-md-4.col-sm-12
             img(src="/img/about-1.jpg")
-          .col-6
+          .col-6.col-md-8.col-sm-12.col-sm-order-1
             .c-block__txt
               p Мы&nbsp;дорожим доверием наших партнеров, которое основывается на&nbsp;общепринятых мировых стандартах ведения бизнеса. Грамотная навигация и&nbsp;техническое консультационное сопровождение сделки с&nbsp;нашей стороны позволит Вам оценить предоставляемые сервисные услуги высочайшего качества.
         section.flex-row.flex-row_valign-center
-          .col-6
+          .col-6.col-md-8.col-sm-12
             .c-block__txt.c-block__txt_first
               p &laquo;ГЛОБАЛЭНЕРГОХОЛДИНГ&raquo; придерживается долгосрочной перспективы развития бизнеса и&nbsp;находится в&nbsp;постоянном поиске единомышленников и&nbsp;заинтересованных лиц, руководствующихся твердыми убеждениями, которые помогли&nbsp;бы нам повысить эффективность работы на&nbsp;этих ключевых направлениях.
-          .col-6
+          .col-6.col-md-4.col-sm-12
             img(src="/img/about-2.jpg")
         section.flex-row.flex-row_valign-center
-          .col-6
+          .col-6.col-md-4.col-sm-12
             img(src="/img/about-3.jpg")
-          .col-6
+          .col-6.col-md-8.col-sm-12.col-sm-order-1
             .c-block__txt
               p Используя новые технологии и&nbsp;оценивая каждую мельчайшую деталь как основу создания общего полотна, мы&nbsp;задаем высокие стандарты промышленной отрасли на&nbsp;благо наших партнеров и&nbsp;экономики России.
     TheFooter

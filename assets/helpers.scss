@@ -5,19 +5,6 @@
   min-height: 100vh;
 }
 
-.main-block{
-  flex-grow: 1;
-
-  &_alone{
-    padding-bottom: 5rem;
-    border-bottom: none;
-  }
-
-  @at-root .wrapper & {
-    padding-top: 72px;
-  }
-}
-
 .nowrap{
   white-space: nowrap;
 }
@@ -140,11 +127,6 @@
   }
 }
 
-//typo
-strong{
-  font-weight: 700;
-}
-
 .m-page{
 
   & video {
@@ -162,6 +144,27 @@ strong{
       height: 100%;
       display: block;
       background: url(/img/video.jpg) no-repeat 50% 50% / cover;
+    }
+  }
+}
+
+.close-btn{
+  border: none;
+  outline: none;
+}
+
+.img-no-resp-wrap{
+
+  @media screen and (max-width: 767px){
+    margin-left: -1rem;
+    margin-right: -1rem;
+    overflow-y: auto;
+  }
+
+  & img{
+
+    @media screen and (max-width: 767px){
+      max-width: unset;
     }
   }
 }
