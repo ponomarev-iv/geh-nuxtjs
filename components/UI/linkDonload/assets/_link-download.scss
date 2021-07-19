@@ -9,6 +9,10 @@
   color: #000;
   transition: all ease .33s;
 
+  @media screen and (max-width: 480px){
+    padding: 1.25rem;
+  }
+
   &:not(:last-of-type){
     margin-bottom: 1rem;
   }
@@ -27,12 +31,23 @@
     line-height: 1.5;
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 480px){
+      flex-basis: 100%;
+      flex-wrap: wrap;
+      padding-top: .5rem;
+    }
   }
 
   &__notes{
     margin-left: .5rem;
     color: #808080;
     font-weight: 400;
+
+    @media screen and (max-width: 480px){
+      flex-basis: 100%;
+      margin-left: 0;
+    }
   }
 
   &__icon{

@@ -55,7 +55,7 @@
           :imgClass="'pp__img'"
           :imgStyle="'top:4rem; max-width: 39vw;'"
         )
-      .pp(style='padding-bottom:20vw')
+      .pp.pp_last
         .c-wrap
           h2.pp__title.pp__title_no-mrg Карьера
           .pp__wrap
@@ -114,7 +114,7 @@
 
         Picture(
           :img="'pp-img-3'"
-          :imgClass="'pp__img'"
+          :imgClass="'pp__img pp__img_bot'"
           :imgStyle="'bottom:-5vh; right: -3.5vw; top: auto; max-width: 39vw;'"
         )
     TheFooter

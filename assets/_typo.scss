@@ -15,8 +15,20 @@ strong{
     font-size: 1.5rem;
   }
 
+  @media screen and (max-width: 340px) {
+    font-size: 1.25rem;
+  }
+
   &_mrg-xl{
     margin-bottom: 4rem;
+
+    @media screen and (max-width: 980px) {
+      margin-bottom: 3rem;
+    }
+
+    @media screen and (max-width: 640px) {
+      margin-bottom: 2rem;
+    }
   }
 }
 
@@ -26,6 +38,10 @@ strong{
   font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 2.5rem;
+
+  @media screen and (max-width: 640px) {
+    margin-bottom: 1.5rem;
+  }
 }
 
 //concluding
@@ -49,6 +65,10 @@ strong{
 
     &:not(:last-of-type){
       margin-bottom: 2.5rem;
+
+      @media screen and (max-width: 640px) {
+        margin-bottom: 1.25rem;
+      }
     }
 
     &:hover{
@@ -78,12 +98,20 @@ strong{
 .list{
   margin-bottom: 4rem;
 
+  @media screen and (max-width: 640px) {
+    margin-bottom: 2rem;
+  }
+
   &__item{
     position: relative;
     color: #363636;
     font-size: 1.25rem;
     line-height: 1.5rem;
     padding-left: 1rem;
+
+    @media screen and (max-width: 640px) {
+      font-size: 1rem;
+    }
 
     &:not(:last-of-type){
       margin-bottom: 1.5rem;
@@ -131,6 +159,10 @@ strong{
   &__item{
     display: flex;
 
+    @media screen and (max-width: 640px) {
+      flex-wrap: wrap;
+    }
+
     &:not(:last-of-type){
       margin-bottom: 2rem;
     }
@@ -159,5 +191,12 @@ strong{
     flex: 0 0 auto;
     max-width: calc(100% - 3.5rem);
     padding-left: 1em;
+
+    @media screen and (max-width: 640px) {
+      flex-basis: 100%;
+      max-width: unset;
+      padding-left: 0;
+      padding-top: 1rem;
+    }
   }
 }

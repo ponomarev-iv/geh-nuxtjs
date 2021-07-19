@@ -23,10 +23,22 @@
 //margins
 .mb_xxl{
   margin-bottom: 5rem; //80px
+
+  @media screen and (max-width: 980px) {
+    margin-bottom: 3rem;
+  }
+
+  @media screen and (max-width: 640px) {
+    margin-bottom: 2rem;
+  }
 }
 
 .mb_xl{
   margin-bottom: 4rem; //64px
+
+  @media screen and (max-width: 640px) {
+    margin-bottom: 2rem;
+  }
 }
 
 .mb_mid{
@@ -39,10 +51,22 @@
 
 .mt_xl{
   margin-top: 4rem; //64px
+
+  @media screen and (max-width: 980px) {
+    margin-top: 3rem;
+  }
+
+  @media screen and (max-width: 640px) {
+    margin-top: 2rem;
+  }
 }
 
 .mt_mid{
   margin-top: 2.5rem; //40px
+
+  @media screen and (max-width: 640px) {
+    margin-top: 1.25rem;
+  }
 }
 
 .mt_def{

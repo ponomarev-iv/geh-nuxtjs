@@ -2,6 +2,10 @@
 .c-section{
   padding: 4rem 0;
 
+  @media screen and (max-width: 640px) {
+    padding: 1.25rem 0;
+  }
+
   &_gray{
     background-color: $color-gray;
   }
@@ -12,6 +16,10 @@
     font-weight: 600;
     margin-bottom: 1.25em;
     letter-spacing: -.1ex;
+
+    @media screen and (max-width: 640px) {
+      font-size: 1.5rem;
+    }
   }
 }
 

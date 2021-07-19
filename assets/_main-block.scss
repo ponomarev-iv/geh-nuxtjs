@@ -18,6 +18,10 @@
   &_alone{
     padding-bottom: 5rem;
     border-bottom: none;
+
+    @media screen and (max-width: 640px) {
+      padding-bottom: 3rem;
+    }
   }
 
   @at-root .wrapper & {

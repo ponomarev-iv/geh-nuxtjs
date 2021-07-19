@@ -4,6 +4,10 @@
   padding-bottom: 4rem;
   overflow: hidden;
 
+  @media screen and (max-width: 980px){
+    padding-bottom: 2.5rem;
+  }
+
   &:last-of-type{
     padding-bottom: 0;
   }
@@ -11,6 +15,10 @@
   &__wrap{
     display: flex;
     align-items: flex-start;
+
+    @media screen and (max-width: 1080px){
+     display: block;
+    }
   }
 
   &__img{
@@ -19,6 +27,14 @@
     right: 0;
     top: 0;
     z-index: 1;
+
+    @media screen and (max-width: 1600px){
+      top: 0 !important;
+    }
+
+    @media screen and (max-width: 1080px){
+      display: none;
+    }
 
     &_zoom{
 
@@ -30,6 +46,10 @@
         z-index: 10;
       }
     }
+
+    &_bot{
+      top: auto !important;
+    }
   }
 
   &__content{
@@ -37,6 +57,11 @@
     max-width: 66%;
     position: relative;
     z-index: 10;
+
+    @media screen and (max-width: 1080px){
+      flex-basis: 100%;
+      max-width: unset;
+    }
   }
 
   &__title{
@@ -45,6 +70,14 @@
     font-weight: 600;
     margin-bottom: 1em;
     letter-spacing: -.1ex;
+
+    @media screen and (max-width: 980px){
+      font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 767px){
+      font-size: 1.25rem;
+    }
 
     &_no-mrg{
       margin: 0;
@@ -108,6 +141,24 @@
     max-width: 33%;
     padding-left: 1.25rem;
     position: relative;
+
+    @media screen and (max-width: 1080px){
+      flex-basis: 100%;
+      max-width: unset;
+      padding-left: 0;
+    }
+  }
+
+  &_last{
+    padding-bottom: 20vw !important;
+
+    @media screen and (max-width: 1400px){
+      padding-bottom: 10vw !important;
+    }
+
+    @media screen and (max-width: 980px){
+      padding-bottom: 6vw !important;
+    }
   }
 }
 
@@ -118,10 +169,19 @@
   box-shadow: 0 5px 30px rgba($color-black, .1);
   padding: 2rem;
 
+  @media screen and (max-width: 980px){
+    margin: 1.5rem 0 2rem;
+    padding: 1.25rem;
+  }
+
   &__title{
     font-size: 1.5rem;
     line-height: 1.33;
     margin-bottom: 1em;
+
+    @media screen and (max-width: 980px){
+      font-size: 1.25rem;
+    }
   }
 
   &_no-mrg{
@@ -130,10 +190,34 @@
 
   & .ico-block{
     margin-top: 1.5rem;
+
+    @media screen and (max-width: 767px){
+      flex-wrap: wrap;
+
+      & .ico-block__wrap{
+        flex-basis: 100%;
+        padding-left: 0;
+        padding-top: 1rem;
+      }
+    }
   }
 
   & .ico-block_step{
     margin-top: 0;
+
+    @media screen and (max-width: 767px){
+      flex-wrap: nowrap;
+
+      & .ico-block__wrap{
+        flex-basis: 80%;
+        padding-left: 1rem;
+        padding-top: 0;
+      }
+
+      & .ico-block__text{
+        font-size: .875rem;
+      }
+    }
   }
 }
 
@@ -145,6 +229,11 @@
   font-size: 1.125rem;
   line-height: 1.33;
   margin: 2rem 0;
+
+  @media screen and (max-width: 980px){
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+  }
 }
 
 //form
@@ -155,10 +244,19 @@
   border-radius: 1.25rem;
   box-shadow: 0 10px 30px rgba($color-black, .1);
 
+  @media screen and (max-width: 980px){
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+  }
+
   &__title{
     font-size: 1.5rem;
     line-height: 1.5;
     color: #000;
+
+    @media screen and (max-width: 1400px){
+      font-size: 1.25rem;
+    }
   }
 
   &__row{

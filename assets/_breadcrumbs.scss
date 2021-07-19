@@ -1,0 +1,10 @@
+.breadcrumbs{
+
+  &__item{
+    display: inline-block;
+
+    &:after{
+      top: auto;
+    }
+  }
+}
